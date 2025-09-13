@@ -61,16 +61,18 @@ startGame = () => {
   diem_tong = 100;
   availableQuesions = [...questions];
   getNewQuestion();
-
   // Timer
   setInterval(function () {
     thoi_gian_su_dung --;
     diem_tong --;
     diem_tongText.innerText = diem_tong;
     thoi_gian_su_dungText.innerText = thoi_gian_su_dung;
-
+    so_cau_saiText.innerText = so_cau_sai;
     if (diem_tong === 0) {
-      localStorage.setItem("mostRecentScore", diem_tong);
+      localStorage.setItem("diem_tong", diem_tong);
+      localStorage.setItem("so_cau_sai", so_cau_sai);
+      
+      localStorage.setItem("thoi_gian_su_dung", thoi_gian_su_dung)
 
       //go to the end page
       return window.location.assign("../../assets/html/end.html");
@@ -81,7 +83,9 @@ startGame = () => {
 // Display Next Random Question and Answers
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-    localStorage.setItem("mostRecentScore", diem_tong);
+    localStorage.setItem("diem_tong", diem_tong);
+    localStorage.setItem("so_cau_sai", so_cau_sai);
+    localStorage.setItem("thoi_gian_su_dung", thoi_gian_su_dung)
 
     //go to the end page
     return window.location.assign("../html/end.html");

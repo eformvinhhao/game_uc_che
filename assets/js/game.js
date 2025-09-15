@@ -82,10 +82,9 @@ startGame = () => {
     diem_tongText.innerText = diem_tong;
     thoi_gian_su_dungText.innerText = thoi_gian_su_dung;
     so_cau_saiText.innerText = so_cau_sai;
-    if (diem_tong === 0) {
+    if (diem_tong === 0 || so_cau_sai === 1) {
       localStorage.setItem("diem_tong", diem_tong);
       localStorage.setItem("so_cau_sai", so_cau_sai);
-      
       localStorage.setItem("thoi_gian_su_dung", thoi_gian_su_dung)
 
       //go to the end page

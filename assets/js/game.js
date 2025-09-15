@@ -16,38 +16,52 @@ let availableQuesions = [];
 
 let questions = [
   {
-    question: "Inside which HTML element do we put the JavaScript??",
-    choice1: "<script>",
-    choice2: "<javascript>",
-    choice3: "<js>",
-    choice4: "<scripting>",
-    answer: 1
+    "question": "TDS của still là bao nhiêu?",
+    "choice1": "375",
+    "choice2": "700",
+    "choice3": "1900",
+    "choice4": "80",
+    "answer": 1
   },
   {
-    question:
-      "What is the correct syntax for referring to an external script called 'xxx.js'?",
-    choice1: "<script href='xxx.js'>",
-    choice2: "<script name='xxx.js'>",
-    choice3: "<script src='xxx.js'>",
-    choice4: "<script file='xxx.js'>",
-    answer: 3
+    "question": "TDS của pet gas là bao nhiêu?",
+    "choice1": "375",
+    "choice2": "700",
+    "choice3": "1900",
+    "choice4": "80",
+    "answer": 3
   },
   {
-    question:
-      "Ok ko nhé",
-    choice1: "12",
-    choice2: "23",
-    choice3: "22>",
-    choice4: "233",
-    answer: 3
+    "question": "TDS của vivant là bao nhiêu?",
+    "choice1": "375",
+    "choice2": "700",
+    "choice3": "1900",
+    "choice4": "80",
+    "answer": 4
   },
   {
-    question: " How do you write 'Hello World' in an alert box?",
-    choice1: "msgBox('Hello World');",
-    choice2: "alertBox('Hello World');",
-    choice3: "msg('Hello World');",
-    choice4: "alert('Hello World');",
-    answer: 4
+    "question": "Brix của final syrup Lemona là bao nhiêu?",
+    "choice1": "375",
+    "choice2": "700",
+    "choice3": "1900",
+    "choice4": "80",
+    "answer": 4
+  },
+  {
+    "question": "Brix của final syrup Wake up 247 là bao nhiêu?",
+    "choice1": "375",
+    "choice2": "700",
+    "choice3": "1900",
+    "choice4": "80",
+    "answer": 4
+  },
+  {
+    "question": "Vĩnh Hảo đang được chứng nhận GCN nào về hệ thống quản lý ATVSTP",
+    "choice1": "BRC",
+    "choice2": "FSSC",
+    "choice3": "ISO 22000",
+    "choice4": "ISO 14000",
+    "answer": 2
   }
 ];
 

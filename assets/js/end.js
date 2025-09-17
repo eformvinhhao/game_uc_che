@@ -10,8 +10,6 @@ const so_cau_sai_luu = localStorage.getItem("so_cau_sai");
 const thoi_gian_su_dung_luu = localStorage.getItem("thoi_gian_su_dung");
 
 
-const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-
 const MAX_HIGH_SCORES = 5;
 
 diem_tong.innerText = diem_tong_luu;
@@ -40,3 +38,4 @@ saveHighScore = e => {
   localStorage.setItem("highScores", JSON.stringify(highScores));
   window.location.assign("../html/highscores.html");
 };
+

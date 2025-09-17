@@ -38,6 +38,17 @@
     </div>
   </main>
   <script src="../js/end.js"></script>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script>
+  d3.json("/ketqua.json", function(error, data) {
+    if (error)
+      throw error;
+    console.log(data);
+  });
+</script>
+
 </body>
 
 </html>

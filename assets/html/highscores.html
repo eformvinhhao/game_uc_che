@@ -23,11 +23,31 @@
     <!-- Leaderboard -->
     <div id="highScores" class="flex-center flex-column">
       <h1 id="finalScore">Danh sách xếp hạng</h1>
-      <ul id="highScoresList"></ul>
-      <a class="btn" href="../../index.html">Về trang chủ</a>
-    </div>
+
+        <!-- Search Start -->
+                          <div class="col-md-12">
+                              <input type="search" id="search" data-search class="form-control border-0" search
+                                  placeholder="Keyword" />
+                          </div>
+
+      <div id="user-cards" class="tab-pane fade show p-0" data-user-cards-container></div>
+      <template data-user-template>
+        <tr>
+          <td><p data-No></p></td>
+          <td><p data-Name></p></td>
+          <td><p data-Dept></p></td>
+          <td><p data-Time></p></td>
+          <td><p data-Score></p></td>
+          <td><p data-Correct></p></td>
+          <td><p data-Timestamp></p></td>
+        </tr>
+            
+      </template>
+
+      <a style="margin-top: auto;" class="btn" href="../../index.html">Về trang chủ</a>
   </main>
   <script src="../js/highscores.js"></script>
+
 </body>
 
 </html>

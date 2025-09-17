@@ -314,8 +314,8 @@ let questions = [
 ];
 
 //CONSTANTS
-const INCORRECT_TAX = 10;
-const MAX_QUESTIONS = 4;
+const INCORRECT_TAX = 100;
+const MAX_QUESTIONS = 100;
 
 // Start Game & Timer
 startGame = () => {

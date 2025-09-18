@@ -1,41 +1,56 @@
-[ 
+[
   {
-    "No": "No",
-    "Name": "Name",
-    "Dept": "Dept",
-    "Correct": "Correct",
-    "Time": "Time",
-    "Score": "Score",
-    "Timestamp": "Timestamp"
+    "No": "Xếp hạng",
+    "Name": "Họ và tên",
+    "Mail": "Email",
+    "Dept": "Bộ phận/Line",
+    "Correct": "Số câu đúng",
+    "Time": "Thời gian sử dụng",
+    "Timestamp": "Thời gian nộp phiếu"
+  },
+  {
+    "No": "4",
+    "Name": "Huỳnh Anh Khoa",
+    "Mail": "khoaha@vinhhao.com.vn",
+    "Dept": "QA",
+    "Correct": "1",
+    "Time": "4",
+    "Timestamp": "18/09/2025 16:58:02"
+  },
+  {
+    "No": "5",
+    "Name": "Huỳnh Anh Khoa",
+    "Mail": "khoaha@vinhhao.com.vn",
+    "Dept": "QA",
+    "Correct": "1",
+    "Time": "9",
+    "Timestamp": "18/09/2025 16:56:02"
+  },
+  {
+    "No": "3",
+    "Name": "Huỳnh Anh Khoa",
+    "Mail": "khoaha@vinhhao.com.vn",
+    "Dept": "QA",
+    "Correct": "2",
+    "Time": "11",
+    "Timestamp": "18/09/2025 17:07:31"
+  },
+  {
+    "No": "2",
+    "Name": "Huỳnh Anh Khoa",
+    "Mail": "khoaha@vinhhao.com.vn",
+    "Dept": "QA",
+    "Correct": "5",
+    "Time": "18",
+    "Timestamp": "18/09/2025 17:09:27"
   },
   {
     "No": "1",
     "Name": "Huỳnh Anh Khoa",
+    "Mail": "khoaha@vinhhao.com.vn",
     "Dept": "QA",
-    "Correct": "5",
-    "Time": "935",
-    "Score": "10000",
-    "Timestamp": "15:20 234033"
-  },
-  {
-    "No": "2",
-    "Name": "Huỳnhsadsadsa",
-    "Dept": "QA",
-    "Correct": "5",
-    "Time": "935",
-    "Score": "10000",
-    "Timestamp": "15:20 234033"
-  },
-  {
-    "No": "3",
-    "Name": "Hdsfs",
-    "Dept": "QA",
-    "Correct": "5",
-    "Time": "935",
-    "Score": "10000",
-    "Timestamp": "15:20 234033"
+    "Correct": "8",
+    "Time": "33",
+    "Timestamp": "18/09/2025 17:19:08"
   }
 ]
-
-
-

@@ -8,7 +8,7 @@ let users = []
 searchInput.addEventListener("input", e => {
   const value = e.target.value.toLowerCase()
   users.forEach(user => { 
-    const isVisible = user.Name.toLowerCase().includes(value) || user.Score.toLowerCase().includes(value) || user.Score.toLowerCase().includes("score")
+    const isVisible = user.Name.toLowerCase().includes(value)
     user.element.classList.toggle("hide", !isVisible)
 
   })
@@ -34,7 +34,6 @@ fetch("https://eformvinhhao.github.io/game_uc_che/ketqua.json")
       Dept.textContent = user.Dept
       Correct.textContent = user.Correct
       Time.textContent = user.Time
-      Score.textContent = user.Score
       Timestamp.textContent = user.Timestamp
       userCardContainer.append(card)
       console.log(user.Name)
@@ -45,7 +44,6 @@ fetch("https://eformvinhhao.github.io/game_uc_che/ketqua.json")
         Dept: user.Dept,
         Correct: user.Correct,
         Time: user.Time,
-        Score: user.Score,
         Timestamp: user.Timestamp,
         element: card
       }

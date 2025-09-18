@@ -22,6 +22,7 @@ fetch("https://eformvinhhao.github.io/game_uc_che/ketqua.json")
       const card = userCardTemplate.content.cloneNode(true).children[0]
       const No = card.querySelector("[data-No]")
       const Name = card.querySelector("[data-Name]")
+      const Mail = card.querySelector("[data-Mail]")
       const Dept = card.querySelector("[data-Dept]")
       const Correct = card.querySelector("[data-Correct]")
       const Time = card.querySelector("[data-Time]")
@@ -29,6 +30,7 @@ fetch("https://eformvinhhao.github.io/game_uc_che/ketqua.json")
       const Timestamp = card.querySelector("[data-Timestamp]")
       No.textContent = user.No
       Name.textContent = user.Name
+      Mail.textContent = user.Mail
       Dept.textContent = user.Dept
       Correct.textContent = user.Correct
       Time.textContent = user.Time
@@ -39,6 +41,7 @@ fetch("https://eformvinhhao.github.io/game_uc_che/ketqua.json")
       return { 
         No: user.No,
         Name: user.Name,  
+        Mail: user.Mail,
         Dept: user.Dept,
         Correct: user.Correct,
         Time: user.Time,

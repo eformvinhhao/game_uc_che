@@ -17,307 +17,323 @@ let availableQuesions = [];
 
 let questions = [
   {
-    "question": "TDS của still là bao nhiêu?",
-    "choice1": "375",
-    "choice2": "700",
-    "choice3": "1900",
-    "choice4": "80",
+    "question": "Một nhà máy trong năm 2024 nhận được 4 trường hợp khiếu nại từ khách hàng, với tổng số sản phẩm bị khiếu nại là 10 chai. Biết sản lượng sản xuất của nhà máy trong năm 2024 là 1 triệu chai. Hãy tính chỉ số PQCR (Product quality complaint rate) của nhà máy? Biết PQCR là tỷ lệ sản phẩm bị khiếu nại trên 1 tỷ sản phẩm sản xuất được",
+    "choice1": "10000",
+    "choice2": "1000",
+    "choice3": "100",
+    "choice4": "10",
     "answer": 1
   },
   {
-    "question": "TDS của pet gas là bao nhiêu?",
-    "choice1": "375",
-    "choice2": "700",
-    "choice3": "1900",
-    "choice4": "80",
-    "answer": 3
-  },
-  {
-    "question": "TDS của vivant là bao nhiêu?",
-    "choice1": "375",
-    "choice2": "700",
-    "choice3": "1900",
-    "choice4": "80",
+    "question": "Một nhà máy sản xuất 10 triệu chai trong năm 2024. Chỉ số PQCR (tỷ lệ sản phẩm bị khiếu nại trên 1 tỷ sản phẩm sản xuất) của nhà máy là 100. Hỏi trong năm 2024, tổng số sản phẩm bị khiếu nại của nhà máy là bao nhiêu chai?",
+    "choice1": "10000",
+    "choice2": "1000",
+    "choice3": "10",
+    "choice4": "1",
     "answer": 4
   },
   {
-    "question": "Vĩnh Hảo đang được chứng nhận GCN nào về hệ thống quản lý ATVSTP",
-    "choice1": "BRC",
-    "choice2": "FSSC 22000",
-    "choice3": "ISO 22000",
-    "choice4": "ISO 14000",
+    "question": "Một nhà máy sản xuất 2 loại sản phẩm A và B với tổng sản lượng 12 triệu chai trong năm 2024. Chỉ số PQCR của loại A là 4, của loại B là 6 (trên 1 tỷ sản phẩm). Tổng số sản phẩm bị khiếu nại của cả hai loại là 56 chai. Sản lượng năm 2024 của sản phẩm A và B là bao nhiêu (đơn vị: triệu chai)?",
+    "choice1": "A: 8, B: 4",
+    "choice2": "A: 7, B: 5",
+    "choice3": "A: 6, B: 6",
+    "choice4": "A: 9, B: 3",
+    "answer": 1
+  },
+  {
+    "question": "Trong quá trình giải quyết khiếu nại khách hàng, phát biểu nào sau đây sai?",
+    "choice1": "Cần xem xét kỹ nguyên nhân để xác định trách nhiệm và xử lý phù hợp.",
+    "choice2": "Tất cả khiếu nại đều là lỗi của nhà máy, khách hàng không bao giờ sai.",
+    "choice3": "Việc lắng nghe khách hàng giúp cải thiện chất lượng sản phẩm và dịch vụ.",
+    "choice4": "Giải quyết khiếu nại kịp thời giúp nâng cao sự hài lòng và uy tín của doanh nghiệp.",
     "answer": 2
   },
   {
-    "question": "Hệ thống làm mềm được tái sinh bằng?",
-    "choice1": "Nước muối",
-    "choice2": "NaOH",
-    "choice3": "Clorine",
-    "choice4": "Nước nóng",
-    "answer": 1
-  },
-  {
-    "question": "Hoàn nguyên than sử dụng phương pháp nào?",
-    "choice1": "Nước muối",
-    "choice2": "NaOH",
-    "choice3": "Clorine",
-    "choice4": "Nước nóng",
-    "answer": 4
-  },
-  {
-    "question": "Ozone được sử dụng cho loại nước nào?",
-    "choice1": "220",
-    "choice2": "20",
-    "choice3": "375",
-    "choice4": "1900",
-    "answer": 3
-  },
-  {
-    "question": "Lực torque còn được gọi là chỉ tiêu nào dưới đây?",
-    "choice1": "Lực đóng nắp",
-    "choice2": "Độ kín",
-    "choice3": "Lực mở nắp",
-    "choice4": "Độ xì",
-    "answer": 3
-  },
-  {
-    "question": "Chỉ tiêu SST còn gọi là gì?",
-    "choice1": "Độ ngọt",
-    "choice2": "Lực đóng nắp",
-    "choice3": "Độ kín nắp",
-    "choice4": "Lực mở nắp",
-    "answer": 3
-  },
-  {
-    "question": "Tiêu chuẩn SST của sản phẩm không gas là bao nhiêu?",
-    "choice1": "Không xì ở 50 psi, không bung ở 100 psi",
-    "choice2": "Không xì, không bung ở cả 50 và 100 psi",
-    "choice3": "Xì ở 50 psi nhưng không bung ở 100 psi",
-    "choice4": "Không xì ở 100 psi, không bung ở 150 psi",
-    "answer": 1
-  },
-  {
-    "question": "Tiêu chuẩn SST của sản phẩm có gas là bao nhiêu?",
-    "choice1": "Không xì ở 50 psi, không bung ở 100 psi",
-    "choice2": "Không xì, không bung ở cả 100 và 150 psi",
-    "choice3": "Xì ở 50 psi nhưng không bung ở 100 psi",
-    "choice4": "Không xì ở 100 psi, không bung ở 150 psi",
-    "answer": 4
-  },
-  {
-    "question": "Chỉ tiêu AA còn gọi là gì?",
-    "choice1": "Góc mở nắp",
-    "choice2": "Góc dập nắp",
-    "choice3": "Góc đóng nắp",
-    "choice4": "Cả 3 đều sai",
-    "answer": 4
-  },
-  {
-    "question": "Khi tăng thải RO, điều nào sau đây sẽ xảy ra?",
-    "choice1": "TDS thành phẩm tăng",
-    "choice2": "TDS thành phẩm giảm",
-    "choice3": "TDS thành phẩm không đổi",
-    "choice4": "Nghẹt màng, dừng hoạt động",
+    "question": "Khi xử lý khiếu nại, bạn phát hiện lỗi do đối tác cung cấp nguyên liệu gây ra. Bạn sẽ làm gì?",
+    "choice1": "Chỉ thông báo cho khách hàng và không làm gì thêm.",
+    "choice2": "Thông báo cho bộ phận mua hàng và quản lý đối tác để phối hợp xử lý và cải tiến, đồng thời thông báo với khách hàng về tiến độ xử lý.",
+    "choice3": "Đổ lỗi cho khách hàng sử dụng sai sản phẩm.",
+    "choice4": "Giấu lỗi để tránh ảnh hưởng tới danh tiếng công ty.",
     "answer": 2
   },
   {
-    "question": "Khi tăng tỷ lệ nhánh by-pass ở RO 375, điều nào sau đây sẽ xảy ra?",
-    "choice1": "Nitrate tăng, Flo tăng",
-    "choice2": "Nitrate giảm, Flo giảm",
-    "choice3": "Nitrate giảm, Flo tăng",
-    "choice4": "Nitrate tăng, Flo giảm",
-    "answer": 3
-  },
-  {
-    "question": "Trong thiết kế, bố trí khu vực sản xuất, chế biến của nhà máy quy định màu sắc cho từng vùng sạch từ cao đến thấp như sau:",
-    "choice1": " Đỏ 🡺 Xanh 🡺 Vàng",
-    "choice2": "Vàng 🡺 Đỏ 🡺 Xanh",
-    "choice3": " Đỏ 🡺 Vàng 🡺 Xanh",
-    "choice4": " Xanh 🡺 Đỏ 🡺 Vàng",
-    "answer": 3
-  },
-  {
-    "question": "Vùng “Đỏ” được quy định trong tài liệu GHP của Công ty, bao gồm các khu vực sau:",
-    "choice1": "Khu chiết rót line 1, line 2,line3, line 4, line 5; và chế biến cũ",
-    "choice2": "Khu vực chiết rót line 3; Khu chứa, cân phụ gia chế biến cũ; Khu chứa, cân phụ gia chế biến mới.",
-    "choice3": "Cả 2 đều đúng",
-    "choice4": "Cả 2 đều sai",
+    "question": "Phát biểu nào sau đây về DPMO là sai?",
+    "choice1": "DPMO được tính dựa trên số loại lỗi chia cho tổng số sản phẩm sản xuất.",
+    "choice2": "DPMO càng thấp thì quy trình càng có chất lượng cao.",
+    "choice3": "DPMO là số lượng lỗi trên mỗi triệu cơ hội xảy ra trong quy trình sản xuất.",
+    "choice4": "DPMO giúp đo lường mức độ lỗi để đánh giá và cải tiến quy trình.",
     "answer": 1
   },
   {
-    "question": "Vùng “Vàng” quy định trong tài liệu GHP của Công ty, bao gồm các khu vực sau:",
-    "choice1": "Khu chiết rót line 1, line 2, line 4; Khu vực đóng nắp và chế biến cũ",
-    "choice2": "Khu vực chiết rót line 3; Khu chứa, cân phụ gia chế biến cũ; Khu chứa, cân phụ gia CB mới.",
-    "choice3": " Khu chiết rót line 1, line 2, line 4",
-    "choice4": " Khu chứa, cân phụ gia chế biến cũ; Khu chứa, cân phụ gia chế biến mới.",
-    "answer": 4
-  },
-  {
-    "question": "Vùng vàng và vùng đỏ quy định trong tài liệu GHP của Công ty, phải sử dụng các bảo hộ lao động sau:",
-    "choice1": "Quần áo bảo hộ lao động khu sạch, ủng cao su, giày khu sạch",
-    "choice2": " Ủng cao su hoặc giày khu sạch",
-    "choice3": " Mũ trùm, khẩu trang sạch; ủng cao su, giày khu sạch",
-    "choice4": " Mũ trùm, khẩu trang sạch; quần áo bảo hộ lao động khu sạch, ủng cao su, giày khu sạch",
-    "answer": 4
-  },
-  {
-    "question": "Hệ thống chiếu sáng yêu cầu:",
-    "choice1": "Bảo đảm cung cấp đủ ánh sáng cho người sản xuất, chế biến nhìn được bình thường.",
-    "choice2": "Bóng đèn chiếu sáng phải được che chắn an toàn (hộp hoặc lưới) để tránh vỡ và nếu vỡ sẽ không có mảnh vỡ rơi vào thực phẩm.",
-    "choice3": "Cả 2 đều đúng",
-    "choice4": "Cả 2 đều sai",
+    "question": "Phát biểu nào sau đây về Sigma Level là sai?",
+    "choice1": "Sigma Level thể hiện mức độ hiệu quả của một quy trình sản xuất dựa trên số lượng lỗi xảy ra.",
+    "choice2": "Sigma Level càng cao, tỷ lệ sản phẩm lỗi càng thấp và chất lượng càng tốt.",
+    "choice3": "Sigma Level là một con số cố định, không thay đổi theo hiệu suất quy trình.",
+    "choice4": "Sigma Level giúp doanh nghiệp đánh giá và cải tiến chất lượng sản phẩm.",
     "answer": 3
   },
   {
-    "question": "Khu vực nhà vệ sinh có quy định sau:",
-    "choice1": "Tối thiểu 25 người phải có 01 nhà vệ sinh; Được bố trí ở các vị trí thuận tiện cho tất cả khách hàng và mọi người trong cơ sở sử dụng",
-    "choice2": "Bảo đảm cách biệt khu vực chế biến, nhà ăn và có đầy đủ thiết bị bảo đảm vệ sinh, có đủ nước sạch và thiết bị rửa tay sau khi đi vệ sinh",
-    "choice3": " Cần có chỉ dẫn “Rửa tay sau khi đi vệ sinh” thoát nước dễ dàng loại bỏ chất thải; hướng gió chính không thổi từ khu vực nhà vệ sinh sang khu vực chế biến, bảo quản",
-    "choice4": "Tất cả các câu trên đều đúng",
+    "question": "Mối liên hệ chính giữa DPMO (Defects Per Million Opportunities - Số lỗi trên một triệu cơ hội) và Sigma Level là gì?",
+    "choice1": "DPMO càng cao thì Sigma Level càng cao, cho thấy quy trình hoạt động hiệu quả hơn.",
+    "choice2": "DPMO và Sigma Level là hai khái niệm riêng biệt, không liên quan đến nhau.",
+    "choice3": "DPMO chỉ dùng để đo lường chất lượng trong phòng thí nghiệm, không áp dụng cho sản xuất thực tế.",
+    "choice4": "Khi số lỗi trên mỗi triệu cơ hội giảm xuống, Sigma Level sẽ tăng lên, cho thấy chất lượng quy trình được cải thiện.",
     "answer": 4
   },
   {
-    "question": "Yêu cầu về thiết bị, dụng cụ sản xuất, chế biến, là:",
-    "choice1": "Có đủ dụng cụ, đồ chứa riêng cho nguyên liệu, đóng gói, vận chuyển thực phẩm",
-    "choice2": "Dễ làm vệ sinh, bảo dưỡng, không làm nhiễm bẩn thực phẩm do dầu mỡ bôi trơn, tránh mảnh vụn kim loại.",
-    "choice3": "Phương tiện, trang thiết bị của dây chuyền sản xuất, chế biến phải có quy trình vệ sinh, quy trình vận hành",
-    "choice4": "Tất cả các câu trên đều đúng",
+    "question": "Phát biểu nào sau đây đúng nhất về ý nghĩa của hai chỉ số Cp và Cpk trong quản lý chất lượng?",
+    "choice1": "Cp và Cpk dùng để đo độ cứng của sản phẩm trong quá trình kiểm tra vật lý.",
+    "choice2": "Cp và Cpk là hai chỉ số dùng để đánh giá khả năng tài chính của doanh nghiệp.",
+    "choice3": "Cp và Cpk phản ánh mức độ đáp ứng của quá trình sản xuất so với yêu cầu kỹ thuật; trong đó, Cpk xét đến cả độ lệch tâm của quá trình.",
+    "choice4": "Cp và Cpk là các đơn vị đo lường khối lượng của nguyên liệu đầu vào.",
+    "answer": 3
+  },
+  {
+    "question": "Nhân viên A đo thể tích của 5 chai sản phẩm Wake-up 247 (mL) là: 330.2 mL, 330.5 mL, 330.3 mL, 330.4 mL, 330.6 mL. Trung bình (mean) thể tích là bao nhiêu?",
+    "choice1": "330.25",
+    "choice2": "330.3",
+    "choice3": "330.35",
+    "choice4": "330.4",
     "answer": 4
   },
   {
-    "question": "Chủ cơ sở, người trực tiếp tham gia sản xuất, CB thực phẩm phải đáp ứng đủ điều kiện về:",
-    "choice1": "Kiến thức, sức khỏe và thực hành an toàn vệ sinh thực phẩm",
-    "choice2": "Kiến thức, sức khỏe và có “Giấy chứng nhận kiến thức về an toàn vệ sinh thực phẩm",
-    "choice3": "Cả 2 đều đúng",
-    "choice4": "Cả 2 đều sai",
+    "question": "Nhân viên A đo thể tích của 5 chai sản phẩm Wake-up 247 (mL) là: 330.1, 330.3, 330.2, 330.4, 330.5. Trung vị (median) thể tích là bao nhiêu?",
+    "choice1": "330.25",
+    "choice2": "330.3",
+    "choice3": "330.35",
+    "choice4": "330.4",
     "answer": 2
   },
   {
-    "question": " Những người tham gia trực tiếp vào sản xuất, chế biến thực phẩm phải thực hiện các yêu cầu sau, để bảo đảm an toàn thực phẩm:",
-    "choice1": " Mặc trang phục bảo hộ riêng, mặc tạp dề, đeo khẩu trang, đội mũ che tóc khi sản xuất, chế biến.",
-    "choice2": "Giữ móng tay ngắn, sạch sẽ và không đeo đồ trang sức khi tiếp xúc trực tiếp với thực phẩm ăn ngay; Không đeo đồ trang sức, đồng hồ khi sản xuất, chế biến và tiếp xúc trực tiếp với thực phẩm.",
-    "choice3": "Không ăn uống, hút thuốc, khạc nhổ trong khu vực sản xuất thực phẩm",
-    "choice4": "Tất cả các câu trên đều đúng",
-    "answer": 4
-  },
-  {
-    "question": "Thực hành chế biến thực phẩm tốt, bảo đảm an toàn thực phẩm, khi sử dụng nguyên liệu, yêu cầu:",
-    "choice1": "Có nguồn gốc rõ ràng (tốt nhất là đã được chứng nhận an toàn cho phép sử dụng)",
-    "choice2": "Không sử dụng phụ gia thực phẩm, chất hỗ trợ chế biến không được Bộ Y tế cho phép sử dụng và",
-    "choice3": " Lưu giữ hồ sơ về nguồn gốc, xuất xứ nguyên liệu thực phẩm và các tài liệu khác về toàn bộ quá trình sản xuất, chế biến thực phẩm.",
-    "choice4": "Tất cả các câu trên đều đúng",
-    "answer": 4
-  },
-  {
-    "question": "Thực hành chế biến thực phẩm tốt, bảo đảm an toàn thực phẩm, phải:",
-    "choice1": "Thường xuyên vệ sinh dụng cụ, vệ sinh khu vực sản xuất, chế biến, nhà ăn, thu dọn rác thải...",
-    "choice2": "Không cho vật nuôi vào khu vực sản xuất, chế biến thực phẩm.",
-    "choice3": "Cả 2 đều đúng",
-    "choice4": "Cả 2 đều sai",
+    "question": "Nếu dữ liệu đo lường sản phẩm có độ lệch chuẩn (standard deviation) càng nhỏ, việc này cho thấy điều gì?",
+    "choice1": "Sản phẩm có nhiều lỗi hơn",
+    "choice2": "Dữ liệu bị phân tán rộng",
+    "choice3": "Sản phẩm có tính ổn định cao",
+    "choice4": "Trung bình bị sai lệch",
     "answer": 3
   },
   {
-    "question": "Bàn tay tốt khi rửa tay để bảo đảm sạch sẽ, thì phải:",
-    "choice1": "Rửa tay kỹ bằng xà phòng và nước sạch",
-    "choice2": "Làm khô tay sau khi rửa bằng khăn giấy dùng một lần, khăn bông sạch hoặc máy thổi khô",
-    "choice3": "Không chùi vào quần áo, váy, tạp dề",
-    "choice4": "Tất cả các câu trên đều đúng",
-    "answer": 4
+    "question": "Bộ kết quả nào sau đây có độ lệch chuẩn nhỏ nhất?",
+    "choice1": "9.8, 10.0, 10.2, 10.4, 10.6",
+    "choice2": "10.0, 10.0, 10.0, 10.0, 10.0",
+    "choice3": "8.5, 9.5, 10.5, 11.5, 12.5",
+    "choice4": "9.0, 10.0, 11.0, 12.0, 13.0",
+    "answer": 2
   },
   {
-    "question": "Yêu cầu với phương tiện rửa và khử trùng tay, là:",
-    "choice1": "Có đầy đủ các thiết bị rửa tay và khử trùng tay ở các vị trí thuận tiện trong khu vực sản xuất, chế biến, nhà ăn cho mọi người trong cơ sở sử dụng.",
-    "choice2": "Nơi rửa tay phải cung cấp đầy đủ nước sạch, xà phòng, khăn lau tay sử dụng một lần hay máy sấy khô tay.",
-    "choice3": "Số lượng 50 công nhân thì phải có ít nhất 1 bồn rửa tay.",
-    "choice4": "Tất cả các câu trên đều đúng",
-    "answer": 4
-  },
-  {
-    "question": "Phòng chống côn trùng, động vật gây hại, yêu cầu:",
-    "choice1": "Thiết bị phòng chống côn trùng, động vật gây hại phải được làm bằng vật liệu không gỉ, dễ tháo, hợp vệ sinh, Bảo đảm phòng chống hiệu quả côn trùng và động vật gây hại.",
-    "choice2": "Không sử dụng thuốc, động vật để diệt chuột, côn trùng và động vật gây hại trong khu vực sản xuất, chế biến thực phẩm.",
-    "choice3": "Cả 2 đều đúng",
-    "choice4": "Cả 2 đều sai",
-    "answer": 3
-  },
-  {
-    "question": " Yêu cầu về thiết bị thu gom rác thải, là:",
-    "choice1": "Có dụng cụ thu gom, chứa rác thải, chất thải bảo đảm vệ sinh.",
-    "choice2": "Thiết bị, dụng cụ thu gom rác thải phải được làm bằng vật liệu ít bị hư hỏng, bảo đảm kín, có nắp đậy, tránh sự xâm nhập của động vật và được vệ sinh thường xuyên.",
-    "choice3": "Cả 2 đều đúng",
-    "choice4": "Cả 2 đều sai",
-    "answer": 4
-  },
-  {
-    "question": " Yêu cầu về thiết bị, dụng cụ giám sát, đo lường là:",
-    "choice1": "Có đủ thiết bị, dụng cụ giám sát, đo lường để đánh giá được các chỉ tiêu chất lượng thực phẩm",
-    "choice2": "Thiết bị, dụng cụ giám sát, kiểm soát được độ chính xác.",
-    "choice3": "Được bảo dưỡng, định kỳ theo quy định.",
-    "choice4": "Tất cả các câu trên đều đúng",
-    "answer": 4
-  },
-  {
-    "question": "Yêu cầu về chất tẩy rửa và sát trùng, là:",
-    "choice1": "Các chất dùng để tẩy rửa và sát trùng dụng cụ chứa thực phẩm phải được đựng trong bao bì dễ nhận biết và có hướng dẫn sử dụng phù hợp với đặc điểm kỹ thuật.",
-    "choice2": "Các chất tẩy rửa phải để cách biệt với nơi sản xuất, chế biến, bảo quản thực phẩm.",
-    "choice3": "Chỉ sử dụng chất tẩy rửa dụng cụ chứa thực phẩm và chất tẩy trùng được Bộ Y tế cho phép.",
-    "choice4": "Tất cả các câu trên đều đúng",
-    "answer": 4
-  },
-  {
-    "question": " Hành vi nào sau đây là hành vi bị cấm theo quy định của Luật ATTP?",
-    "choice1": "Sử dụng nguyên liệu không thuộc loại dùng cho thực phẩm để chế biến thực phẩm",
-    "choice2": "Người mắc bệnh truyền nhiễm tham gia sản xuất, kinh doanh thực phẩm.",
-    "choice3": "Sản xuất, kinh doanh thực phẩm tại cơ sở không có giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm theo quy định của pháp luật.",
-    "choice4": "Tất cả các câu trên đều đúng",
-    "answer": 4
-  },
-  {
-    "question": "Hành vi nào sau đây là hành vi bị cấm theo quy định của Luật ATTP?",
-    "choice1": "Chứa đựng thực phẩm trên thiết bị, dụng cụ, vật liệu không bảo đảm vệ sinh; người trực tiếp chế biến thức ăn mà không đội mũ, đeo khẩu trang; không cắt ngắn móng tay; không sử dụng găng tay khi tiếp xúc trực tiếp với thực phẩm chín, thức ăn ngay.",
-    "choice2": "Không có đủ dụng cụ chế biến, bảo quản và sử dụng riêng đối với thực phẩm tươi sống, thực phẩm đã qua chế biến.",
-    "choice3": "Nơi chế biến, kinh doanh, bảo quản có côn trùng, động vật gây hại xâm nhập.",
-    "choice4": "Tất cả các câu trên đều đúng",
-    "answer": 4
-  },
-  {
-    "question": " Trong khi chế biến thực phẩm, người chế biến thực phẩm tại các cơ sở kinh doanh dịch vụ ăn uống không được?",
-    "choice1": "Khạc nhổ",
-    "choice2": "Ăn kẹo cao su",
-    "choice3": "Mang đồng hồ, trang sức",
-    "choice4": "Tất cả các câu trên đều đúng",
-    "answer": 4
-  },
-  {
-    "question": "Khi bị ngộ độc thực phẩm, thì nơi có người ngộ độc thực phẩm báo cho cơ quan nào?",
-    "choice1": "Cơ sở y tế gần nhất",
-    "choice2": "Hội tiêu chuẩn và bảo vệ quyền lợi người tiêu dùng.",
-    "choice3": "Chi cục Quản lý thị trường.",
-    "choice4": "Chi cục an toàn thực phẩm.",
+    "question": "Chỉ số nào sau đây đánh giá độ phân tán dữ liệu?",
+    "choice1": "Độ lệch chuẩn",
+    "choice2": "Trung vị",
+    "choice3": "Mode (Giá trị xuất hiện nhiều nhất)",
+    "choice4": "Trung bình",
     "answer": 1
   },
   {
-    "question": "Ba điều kiện về vệ sinh an toàn thực phẩm bao gồm",
-    "choice1": "Điều kiện về cơ sở; Điều kiện về trang thiết bị, dụng cụ và điều kiện về con người",
-    "choice2": "Điều kiện liên quan đến mối nguy về vi sinh; hóa học và vật lý",
-    "choice3": "Điều kiện về vệ sinh cá nhân; bảo hộ lao động và không đeo trang sức",
-    "choice4": "Tất cả các câu trên đều đúng",
+    "question": "Khi sử dụng biểu đồ kiểm soát (Control Chart), nếu một điểm nằm ngoài giới hạn ±3σ, điều đó có nghĩa là gì?",
+    "choice1": "Quá trình vẫn ổn định",
+    "choice2": "Có lỗi do con người",
+    "choice3": "Có khả năng quá trình không còn kiểm soát",
+    "choice4": "Đó là sản phẩm tốt",
+    "answer": 3
+  },
+  {
+    "question": "Đặc điểm nào dưới đây là của trung vị (median)?",
+    "choice1": "Là giá trị chính giữa sau khi sắp xếp dữ liệu",
+    "choice2": "Luôn bằng trung bình nếu phân bố khác chuẩn",
+    "choice3": "Bị ảnh hưởng mạnh bởi các giá trị ngoại lệ",
+    "choice4": "Luôn là giá trị phổ biến nhất",
     "answer": 1
   },
   {
-    "question": "Về địa điểm và môi trường có yêu cầu",
-    "choice1": "Không bị ngập nước, đọng nước.",
-    "choice2": "Cách biệt với nguồn ô nhiễm (cống rãnh, rác thải, công trình vệ sinh, …)",
-    "choice3": "Cả 2 đều đúng",
-    "choice4": "Cả 2 đều sai",
+    "question": "Giá trị xuất hiện thường xuyên nhất trong bộ dữ liệu được gọi là gì?",
+    "choice1": "Yếu vị (Mode)",
+    "choice2": "Trung vị (Median)",
+    "choice3": "Trung bình (Mean)",
+    "choice4": "Độ lệch chuẩn (Standard deviation)",
+    "answer": 1
+  },
+  {
+    "question": "Trong kiểm soát chất lượng, dữ liệu phân bố càng gần trung bình thì điều gì xảy ra?",
+    "choice1": "Độ lệch chuẩn càng lớn",
+    "choice2": "Sự ổn định càng cao",
+    "choice3": "Sự biến động càng cao",
+    "choice4": "Phân bố càng lệch",
+    "answer": 2
+  },
+  {
+    "question": "Đặc điểm nào sau đây là của phân bố chuẩn (normal distribution)?",
+    "choice1": "Bị lệch về bên phải",
+    "choice2": "Bị lệch về bên trái",
+    "choice3": "Đối xứng quanh trung bình",
+    "choice4": "Không có trung vị",
     "answer": 3
+  },
+  {
+    "question": "Một thiết bị sản xuất ra sản phẩm có độ lệch chuẩn tăng dần, việc này cho thấy điều gì?",
+    "choice1": "Chất lượng trở nên đồng đều hơn",
+    "choice2": "Sản phẩm chất lượng hơn",
+    "choice3": "Dữ liệu phân tán rộng hơn",
+    "choice4": "Dữ liệu phân tán hẹp hơn",
+    "answer": 3
+  },
+  {
+    "question": "Nước sau làm mềm là nước có đặc điểm nào sau đây?",
+    "choice1": "Nhiều canxi và magie",
+    "choice2": "Không có độ pH",
+    "choice3": "Độ cứng thấp",
+    "choice4": "Nhiều chất rắn lơ lửng",
+    "answer": 3
+  },
+  {
+    "question": "Ion bicarbonate (HCO₃⁻) là thành phần chính trong nước khoáng Vĩnh Hảo, vai trò của ion này là gì?",
+    "choice1": "Tăng độ pH đột ngột",
+    "choice2": "Giảm độ pH đột ngột",
+    "choice3": "Làm tăng độ cứng",
+    "choice4": "Duy trì tính đệm (buffer) của nước",
+    "answer": 4
+  },
+  {
+    "question": "Ion bicarbonate (HCO₃⁻) trong nước khoáng Vĩnh Hảo có thể làm tăng tính chất nào sau đây?",
+    "choice1": "Tính kiềm nhẹ",
+    "choice2": "Tính axit nhẹ",
+    "choice3": "Tính kiềm mạnh",
+    "choice4": "Tính axit mạnh",
+    "answer": 1
+  },
+  {
+    "question": "Sau quá trình làm mềm, chỉ tiêu nào sau đây sẽ giảm?",
+    "choice1": "Hàm lượng nitrate",
+    "choice2": "Hàm lượng canxi",
+    "choice3": "Hàm lượng flo",
+    "choice4": "Cả 3 câu trên đều đúng",
+    "answer": 2
+  },
+  {
+    "question": "Quá trình lọc than để loại bỏ chất nào dưới đây?",
+    "choice1": "Chlorine dư",
+    "choice2": "Flo dư",
+    "choice3": "Nitrate dư",
+    "choice4": "Canxi dư",
+    "answer": 1
+  },
+  {
+    "question": "Removing torque là gì?",
+    "choice1": "Lực cần thiết để vặn nắp chai vào chai",
+    "choice2": "Lực cần thiết để mở nắp chai ra khỏi chai",
+    "choice3": "Lực tác động lên thân chai khi vận chuyển",
+    "choice4": "Lực đo được khi kiểm tra áp suất trong chai",
+    "answer": 2
+  },
+  {
+    "question": "Application torque là gì?",
+    "choice1": "Lực vặn nắp để đóng chặt nắp lên chai",
+    "choice2": "Lực mở nắp khi sử dụng sản phẩm",
+    "choice3": "Lực tác động lên đáy chai khi đóng gói",
+    "choice4": "Lực kiểm tra độ bền của nắp",
+    "answer": 1
+  },
+  {
+    "question": "Nếu lực mở nắp quá cao, điều gì có thể xảy ra?",
+    "choice1": "Nắp dễ bung ra trong quá trình vận chuyển",
+    "choice2": "Người tiêu dùng gặp khó khăn khi mở nắp",
+    "choice3": "Sản phẩm nhanh bị hỏng do mất kín",
+    "choice4": "Nắp chai bị biến dạng ngay khi đóng",
+    "answer": 2
+  },
+  {
+    "question": "Nếu lực mở nắp quá thấp, điều gì có thể xảy ra?",
+    "choice1": "Nắp dễ bị xì, bung",
+    "choice2": "Người tiêu dùng gặp khó khăn khi mở nắp",
+    "choice3": "Chai bị nứt do áp lực trong chai tăng",
+    "choice4": "Sản phẩm có mùi vị ngon hơn",
+    "answer": 2
+  },
+  {
+    "question": "Đối với chỉ tiêu Top Load, chai rỗng thường được kiểm tra bằng cách nào?",
+    "choice1": "Đặt tải trọng từ trên xuống tăng dần cho đến khi chai bị biến dạng",
+    "choice2": "Lắc sản phẩm liên tục",
+    "choice3": "Đóng mở nắp nhiều lần",
+    "choice4": "Thả tự do từ độ cao 1 mét",
+    "answer": 1
+  },
+  {
+    "question": "Nếu chai có chỉ số Top Load thấp, điều gì có thể xảy ra trong quá trình vận chuyển?",
+    "choice1": "Sản phẩm sẽ dễ bị biến dạng hoặc vỡ dưới trọng lượng chồng lên",
+    "choice2": "Sản phẩm có thể mở nắp dễ dàng hơn",
+    "choice3": "Sản phẩm không bị ảnh hưởng gì khi vận chuyển",
+    "choice4": "Sản phẩm giữ được gas tốt hơn",
+    "answer": 1
+  },
+  {
+    "question": "Tại sao chỉ số Top Load quan trọng trong sản xuất chai PET?",
+    "choice1": "Để xác định độ bền màu sắc của sản phẩm",
+    "choice2": "Để đảm bảo sản phẩm chịu được tải trọng khi xếp chồng và vận chuyển",
+    "choice3": "Để kiểm tra khả năng chống thấm nước",
+    "choice4": "Để đo độ kín khí của nắp chai",
+    "answer": 2
+  },
+  {
+    "question": "Mục đích chính của Ship Test là gì?",
+    "choice1": "Đánh giá khả năng tái chế của bao bì",
+    "choice2": "Đo mức độ carbon phát thải trong quá trình giao hàng",
+    "choice3": "Mô phỏng điều kiện vận chuyển để đánh giá độ bền và tính ổn định của sản phẩm",
+    "choice4": "Kiểm tra màu sắc sản phẩm sau khi đóng gói",
+    "answer": 3
+  },
+  {
+    "question": "Ship Test thường bao gồm những yếu tố mô phỏng nào sau đây?",
+    "choice1": "Rung động khi xe chạy",
+    "choice2": "Va đập hoặc rơi rớt sản phẩm",
+    "choice3": "Thay đổi nhiệt độ và độ ẩm",
+    "choice4": "Tất cả đều đúng",
+    "answer": 4
+  },
+  {
+    "question": "Nếu sản phẩm không đạt Ship Test, điều gì có thể xảy ra?",
+    "choice1": "Bao bì không thể tái sử dụng",
+    "choice2": "Sản phẩm có thể bị hỏng, rò rỉ hoặc biến dạng khi đến tay khách hàng",
+    "choice3": "Thời gian giao hàng bị chậm",
+    "choice4": "Giảm mức độ carbon phát thải trong quá trình giao hàng",
+    "answer": 2
+  },
+  {
+    "question": "Yếu tố nào không ảnh hưởng trực tiếp đến chất lượng sản phẩm trong suốt thời gian bảo quản?",
+    "choice1": "Nhiệt độ bảo quản",
+    "choice2": "Độ kín của bao bì",
+    "choice3": "Vận tốc máy đóng nắp",
+    "choice4": "Ánh sáng nơi trưng bày",
+    "answer": 3
+  },
+  {
+    "question": "Tại sao cần theo dõi cảm quan (màu sắc, mùi, vị) trong suốt thời hạn sử dụng ?",
+    "choice1": "Vì đó là yêu cầu của kế toán",
+    "choice2": "Vì cảm quan phản ánh chính xác chất lượng sản phẩm từ góc độ người tiêu dùng",
+    "choice3": "Vì cảm quan dễ đo hơn vi sinh",
+    "choice4": "Vì cảm quan ảnh hưởng đến thời gian giao hàng",
+    "answer": 2
+  },
+  {
+    "question": "Biến đổi nào sau đây bắt buộc không được phép vi phạm trong suốt thời gian shelf life của sản phẩm?",
+    "choice1": "Bao bì phai màu nhẹ",
+    "choice2": "Vi sinh vật tăng sinh vượt quy định",
+    "choice3": "Nhãn hơi hở mí",
+    "choice4": "Chai mềm do mất gas dần",
+    "answer": 2
+  },
+  {
+    "question": "Nhiệt độ bảo quản có ảnh hưởng đến shelf life của sản phẩm không?",
+    "choice1": "Không ảnh hưởng nếu sản phẩm đã đóng kín",
+    "choice2": "Có ảnh hưởng, nhiệt độ cao có thể làm giảm shelf life",
+    "choice3": "Không ảnh hưởng nếu sản phẩm bảo quản trong thùng carton",
+    "choice4": "Chỉ ảnh hưởng đến bao bì, không ảnh hưởng đến chất lượng bên trong",
+    "answer": 2
   }
 ];
 
 //CONSTANTS
 const INCORRECT_TAX = 100;
 const MAX_QUESTIONS = 100;
-const thoi_gian_max = 60000;
+const thoi_gian_max = 600000;
 
 // Start Game & Timer
 startGame = () => {

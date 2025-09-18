@@ -1,13 +1,14 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById("progressText");
-const diem_tongText = document.getElementById("diem_tong");
-const so_cau_saiText = document.getElementById("so_cau_sai");
+const progressText_Time = document.getElementById("progressText_Time");
 const thoi_gian_su_dungText = document.getElementById("thoi_gian_su_dung");
+const so_cau_dungText = document.getElementById("so_cau_dungText");
 const progressBarFull = document.getElementById("progressBarFull");
+const progressBarFull_Time = document.getElementById("progressBarFull_Time");
 let currentQuestion = {};
 let acceptingAnswers = false;
-let diem_tong = 0;
+let so_cau_dung = 0 ;
 let so_cau_sai = 0;
 let diem_tru_so_cau_sai = 0;
 let thoi_gian_su_dung = 0;
@@ -316,6 +317,7 @@ let questions = [
 //CONSTANTS
 const INCORRECT_TAX = 100;
 const MAX_QUESTIONS = 100;
+const thoi_gian_max = 60000;
 
 // Start Game & Timer
 startGame = () => {
@@ -325,26 +327,23 @@ startGame = () => {
   getNewQuestion();
   // Timer
   setInterval(function () {
-    thoi_gian_su_dung --;
-    diem_tong --;
-    diem_tongText.innerText = diem_tong;
-    thoi_gian_su_dungText.innerText = thoi_gian_su_dung;
-    so_cau_saiText.innerText = so_cau_sai;
-    if (diem_tong === 0 || so_cau_sai === 1) {
-      localStorage.setItem("diem_tong", diem_tong);
+    thoi_gian_su_dung ++;
+    thoi_gian_su_dungText.innerText = `${thoi_gian_su_dung}/${thoi_gian_max/1000}`;
+    if (so_cau_sai === 1 || thoi_gian_su_dung*1000 === thoi_gian_max) {
+      localStorage.setItem("so_cau_dung", questionCounter-1);
       localStorage.setItem("so_cau_sai", so_cau_sai);
       localStorage.setItem("thoi_gian_su_dung", thoi_gian_su_dung)
 
       //go to the end page
       return window.location.assign("../../assets/html/end.html");
     }
-  }, 1200);
+  }, 1000);
 };
 
 // Display Next Random Question and Answers
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-    localStorage.setItem("diem_tong", diem_tong);
+    localStorage.setItem("so_cau_dung", questionCounter-1);
     localStorage.setItem("so_cau_sai", so_cau_sai);
     localStorage.setItem("thoi_gian_su_dung", thoi_gian_su_dung)
 
@@ -352,10 +351,13 @@ getNewQuestion = () => {
     return window.location.assign("../html/end.html");
   }
   questionCounter++;
-  progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+  so_cau_dung++;
+  so_cau_dungText.innerText = `${questionCounter-1}/${MAX_QUESTIONS}`;
+  progressText_Time.innerText = `Thời gian sử dung`;
 
   //Update the progress bar
   progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+  progressBarFull_Time.style.width = `${(thoi_gian_su_dung*1000 / thoi_gian_max) * 100}%`;
 
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
   currentQuestion = availableQuesions[questionIndex];
@@ -381,7 +383,7 @@ choices.forEach(choice => {
     const selectedAnswer = selectedChoice.dataset["number"];
 
     const classToApply =
-      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+      selectedAnswer == currentQuestion.answer ? 'correct' : "incorrect";
 
     if (classToApply === "incorrect") {
       decrementScore(INCORRECT_TAX);
@@ -398,11 +400,8 @@ choices.forEach(choice => {
 
 //Penalty for wrong choice
 decrementScore = num => {
-  diem_tong -= num;
-  diem_tongText.innerText = diem_tong;
   thoi_gian_su_dungText.innerText = thoi_gian_su_dung;
   so_cau_sai++;
-  diem_tru_so_cau_sai = diem_tru_so_cau_sai + 10;
   so_cau_saiText.innerText = so_cau_sai;
 };
 

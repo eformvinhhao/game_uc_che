@@ -30,9 +30,16 @@
 .correct {
   background-color: #28a745;
 }
+.correct p {
+  color:aliceblue;
+}
 
 .incorrect {
   background-color: #dc3545;
+}
+
+.correct p {
+  color:aliceblue;
 }
 
 /* HUD */
@@ -60,7 +67,22 @@
 
 #progressBarFull {
   height: 3.4rem;
-  background-color: #56a5eb;
+  background-color: green;
+  width: 0%;
+}
+
+
+
+#progressBar_Time {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #56a5eb;
+  margin-top: 1.5rem;
+}
+
+#progressBarFull_Time {
+  height: 3.4rem;
+  background-color: red;
   width: 0%;
 }
 

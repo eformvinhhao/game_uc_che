@@ -21,13 +21,13 @@
   <!-- Final Result -->
   <main class="container">
     <div id="end" class="flex-center flex-column">
-      <h1 id="so_cau_sai"></h1>
-      <h1 id="diem_tong"></h1>
-      <h1 id="thoi_gian_su_dung"></h1>
+        <h3>Số câu đúng (/200 câu)</h3>
+        <h2 id="so_cau_dung" style="color:green"></h2>
+        <h3>Thời gian sử dụng (giây)</h3>
+        <h2 id="thoi_gian_su_dung" style="color:red"></h2>
       <form>
         <input type="text" name="username" id="username" placeholder="Họ và tên" />
         <input type="text" name="line" id="line" placeholder="Bộ phận/Dây chuyền" />
-        <input type="text" name="username" id="username" placeholder="Họ và tên" />
         <input type="email" name="email" id="email" placeholder="Email" />
         <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
           Save
@@ -41,13 +41,13 @@
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
 
-<script>
-  d3.json("/ketqua.json", function(error, data) {
-    if (error)
-      throw error;
-    console.log(data);
-  });
-</script>
+  <script>
+    d3.json("/ketqua.json", function (error, data) {
+      if (error)
+        throw error;
+      console.log(data);
+    });
+  </script>
 
 </body>
 

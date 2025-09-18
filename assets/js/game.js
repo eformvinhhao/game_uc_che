@@ -353,7 +353,7 @@ getNewQuestion = () => {
   questionCounter++;
   so_cau_dung++;
   so_cau_dungText.innerText = `${questionCounter-1}/${MAX_QUESTIONS}`;
-  progressText_Time.innerText = `Thời gian sử dung`;
+  progressText_Time.innerText = `Thời gian sử dụng`;
 
   //Update the progress bar
   progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;

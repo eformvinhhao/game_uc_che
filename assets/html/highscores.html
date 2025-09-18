@@ -9,7 +9,7 @@
   <meta name="keywords" content="Javascript, Quiz, Javascript Quiz">
   <meta name="author" content="Kirill Kuznetsov">
   <!-- Title -->
-  <title>High Scores</title>
+  <title>Bảng xếp hạng</title>
   <!-- Custom Styles -->
   <link rel="stylesheet" href="../css/app.css" />
   <link rel="stylesheet" href="../css/highscores.css" />
@@ -22,12 +22,13 @@
 
     <!-- Leaderboard -->
     <div id="highScores" class="flex-center flex-column">
-      <h1 id="finalScore">Danh sách xếp hạng</h1>
-
+      <h1 id="finalScore">Bảng xếp hạng</h1>
+      <p>Được cập nhật vào lúc 8h và 18h hàng ngày</p>
+      <p style="margin-bottom: 10px;" >Thời gian cập nhật gần nhất: 08:00 ngày 18/09/2025</p>
         <!-- Search Start -->
                           <div class="col-md-12">
                               <input type="search" id="search" data-search class="form-control border-0" search
-                                  placeholder="Keyword" />
+                                  placeholder="Nhập tên để tìm thứ hạng" />
                           </div>
 
       <div id="user-cards" class="tab-pane fade show p-0" data-user-cards-container></div>
@@ -44,7 +45,7 @@
             
       </template>
 
-      <a style="margin-top: auto;" class="btn" href="../../index.html">Về trang chủ</a>
+      <a style="margin-top: 25px;" class="btn" href="../../index.html">Về trang chủ</a>
   </main>
   <script src="../js/highscores.js"></script>
 

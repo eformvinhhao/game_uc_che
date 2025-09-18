@@ -246,7 +246,7 @@ let questions = [
     "choice2": "Người tiêu dùng gặp khó khăn khi mở nắp",
     "choice3": "Chai bị nứt do áp lực trong chai tăng",
     "choice4": "Sản phẩm có mùi vị ngon hơn",
-    "answer": 2
+    "answer": 1
   },
   {
     "question": "Đối với chỉ tiêu Top Load, chai rỗng thường được kiểm tra bằng cách nào?",

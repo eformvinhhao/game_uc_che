@@ -338,7 +338,7 @@ startGame = () => {
       //go to the end page
       return window.location.assign("../../assets/html/end.html");
     }
-  }, 1000);
+  }, 1200);
 };
 
 // Display Next Random Question and Answers

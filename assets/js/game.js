@@ -246,7 +246,7 @@ let questions = [
     "choice2": "Người tiêu dùng gặp khó khăn khi mở nắp",
     "choice3": "Chai bị nứt do áp lực trong chai tăng",
     "choice4": "Sản phẩm có mùi vị ngon hơn",
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Đối với chỉ tiêu Top Load, chai rỗng thường được kiểm tra bằng cách nào?",
@@ -327,6 +327,182 @@ let questions = [
     "choice3": "Không ảnh hưởng nếu sản phẩm bảo quản trong thùng carton",
     "choice4": "Chỉ ảnh hưởng đến bao bì, không ảnh hưởng đến chất lượng bên trong",
     "answer": 2
+  },
+  {
+    "question": "\"\"Shelf life\"\" của sản phẩm là gì?",
+    "choice1": "Thời gian sản phẩm được lưu kho trước khi giao hàng",
+    "choice2": "Thời gian vận chuyển sản phẩm từ nhà máy đến đại lý",
+    "choice3": "Khoảng thời gian sản phẩm giữ được chất lượng tiêu chuẩn trong điều kiện bảo quản quy định",
+    "choice4": "Thời gian sản phẩm có mặt trên kệ siêu thị",
+    "answer": 3
+  },
+  {
+    "question": "Drop test là gì?",
+    "choice1": "Kiểm tra khả năng sản phẩm chịu được áp suất bên trong",
+    "choice2": "Kiểm tra phản ứng sản phẩm với thay đổi nhiệt độ",
+    "choice3": "Kiểm tra độ bền của sản phẩm/bao bì khi bị rơi từ độ cao nhất định",
+    "choice4": "Kiểm tra tốc độ lão hóa của sản phẩm",
+    "answer": 3
+  },
+  {
+    "question": "Tiêu chí nào để đánh giá chỉ tiêu Drop test không đạt?",
+    "choice1": "Bao bì bị rách, móp, vỡ",
+    "choice2": "Mực in phai màu",
+    "choice3": "Chai bị đổi màu",
+    "choice4": "Cả 3 câu trên đều đúng",
+    "answer": 1
+  },
+  {
+    "question": "Drop test thường được thực hiện trên điều kiện nào?",
+    "choice1": "Chai/lon rỗng chưa đóng nắp",
+    "choice2": "Sản phẩm đã hoàn thiện và đóng gói như thực tế sử dụng",
+    "choice3": "Bao bì phẳng chưa tạo hình",
+    "choice4": "Thiết bị máy móc",
+    "answer": 2
+  },
+  {
+    "question": "Drop test nên được thực hiện ở đâu?",
+    "choice1": "Nơi có nhiệt độ âm sâu để tăng áp lực",
+    "choice2": "Môi trường thực tế như sàn gạch, bê tông hoặc bề mặt chuẩn theo tiêu chuẩn",
+    "choice3": "Trong bồn nước để mô phỏng rơi chìm",
+    "choice4": "Trong phòng tối để dễ quan sát",
+    "answer": 2
+  },
+  {
+    "question": "HACCP là gì?",
+    "choice1": "Một hệ thống kiểm tra chất lượng sản phẩm sau khi sản xuất",
+    "choice2": "Một quy trình kiểm tra cảm quan thực phẩm",
+    "choice3": "Hệ thống phân tích mối nguy và kiểm soát điểm tới hạn trong sản xuất thực phẩm",
+    "choice4": "Một tiêu chuẩn về đóng gói và bảo quản thực phẩm",
+    "answer": 3
+  },
+  {
+    "question": "CCP là gì?",
+    "choice1": "Quy trình kiểm tra cảm quan nguyên liệu đầu vào",
+    "choice2": "Điểm kiểm soát tới hạn trong quá trình sản xuất nhằm loại bỏ hoặc giảm mối nguy đến mức chấp nhận được",
+    "choice3": "Kế hoạch dự phòng khi có sự cố xảy ra trong sản xuất",
+    "choice4": "Hệ thống quản lý chất lượng dựa trên tiêu chuẩn ISO 9001",
+    "answer": 2
+  },
+  {
+    "question": "OPRP là gì?",
+    "choice1": "Quy trình vận hành thường ngày trong doanh nghiệp",
+    "choice2": "Biện pháp kiểm soát mối nguy không đáng kể trong hệ thống ISO 9001",
+    "choice3": "Biện pháp kiểm soát mối nguy quan trọng nhưng không được phân loại là CCP, thuộc chương trình tiên quyết vận hành",
+    "choice4": "Quy trình kiểm nghiệm vi sinh vật trong thực phẩm",
+    "answer": 3
+  },
+  {
+    "question": "Mối nguy đáng kể trong hệ thống HACCP là gì?",
+    "choice1": "Mối nguy có khả năng xảy ra và/hoặc gây hậu quả nghiêm trọng đến an toàn thực phẩm, cần được kiểm soát bằng biện pháp cụ thể",
+    "choice2": "Mối nguy có thể xảy ra nhưng không ảnh hưởng đến chất lượng sản phẩm",
+    "choice3": "Mối nguy có thể được kiểm soát hoàn toàn bởi chương trình tiên quyết (PRP), không cần phân tích thêm",
+    "choice4": "Mối nguy có liên quan đến yếu tố cảm quan hoặc thẩm mỹ của sản phẩm nhưng không ảnh hưởng đến sức khỏe",
+    "answer": 1
+  },
+  {
+    "question": "Vi sinh vật nào sau đây không nằm trong danh mục vi sinh vật cần kiểm soát trong nước uống theo QCVN?",
+    "choice1": "Acid lactic bacteria",
+    "choice2": "Pseudomonas aeruginosa",
+    "choice3": "Escherichia coli",
+    "choice4": "Coliform tổng số",
+    "answer": 1
+  },
+  {
+    "question": "Phát biểu nào sau đây về Pseudomonas aeruginosa trong nước uống là đúng theo QCVN 6-1: 2010/BYT?",
+    "choice1": "Đây là vi khuẩn cơ hội, bắt buộc không được phát hiện trong mẫu nước uống đóng chai",
+    "choice2": "Vi khuẩn này được cho phép tồn tại với số lượng giới hạn trong nước uống đóng chai",
+    "choice3": "Pseudomonas aeruginosa chỉ gây hại trong nước sinh hoạt, không cần kiểm soát trong nước uống",
+    "choice4": "Chỉ kiểm tra Pseudomonas aeruginosa khi có dấu hiệu ô nhiễm nguồn nước",
+    "answer": 1
+  },
+  {
+    "question": "Việc kiểm soát Pseudomonas aeruginosa trong nước uống đóng chai quan trọng vì lý do nào?",
+    "choice1": "Pseudomonas aeruginosa giúp làm sạch các tạp chất trong nước",
+    "choice2": "Đây là vi khuẩn thường xuất hiện trong nước sinh hoạt, không ảnh hưởng nước đóng chai",
+    "choice3": "Vi khuẩn này không tồn tại lâu trong môi trường nước",
+    "choice4": "Vi khuẩn này gây bệnh cho mọi đối tượng, đặc biệt nguy hiểm cho người có hệ miễn dịch yếu",
+    "answer": 4
+  },
+  {
+    "question": "Một cơ sở sản xuất muốn áp dụng HACCP nhưng không thực hiện đầy đủ các chương trình tiên quyết (PRP). Điều này có thể dẫn đến hậu quả gì?",
+    "choice1": "Không ảnh hưởng vì PRP không quan trọng trong HACCP",
+    "choice2": "Dễ xảy ra mối nguy không kiểm soát được ngay từ đầu, làm giảm hiệu quả hệ thống HACCP",
+    "choice3": "HACCP vẫn hoạt động bình thường mà không cần PRP",
+    "choice4": "PRP chỉ ảnh hưởng đến chất lượng, không ảnh hưởng an toàn thực phẩm",
+    "answer": 2
+  },
+  {
+    "question": "Tại sao việc xác định mối nguy đáng kể là bước đầu tiên và quan trọng nhất trong hệ thống HACCP?",
+    "choice1": "Vì nó giúp tiết kiệm chi phí sản xuất",
+    "choice2": "Vì chỉ có mối nguy đáng kể mới ảnh hưởng trực tiếp đến an toàn thực phẩm và cần kiểm soát cụ thể",
+    "choice3": "Vì tất cả mối nguy đều giống nhau nên cần phải xác định rõ để phân loại",
+    "choice4": "Vì mối nguy đáng kể là những mối nguy đã được loại bỏ hoàn toàn",
+    "answer": 2
+  },
+  {
+    "question": "Nếu một CCP bị thất bại, theo HACCP bạn sẽ thực hiện bước tiếp theo nào?",
+    "choice1": "Tiếp tục sản xuất bình thường vì thất bại chỉ xảy ra tạm thời",
+    "choice2": "Dừng quá trình sản xuất và xử lý sản phẩm có khả năng bị mất an toàn",
+    "choice3": "Bỏ qua và tăng cường kiểm tra cảm quan sản phẩm sau khi hoàn thành",
+    "choice4": "Ghi nhận và báo cáo sự cố nhưng không cần hành động ngay",
+    "answer": 2
+  },
+  {
+    "question": "Phát biểu nào sau đây mô tả đúng nhất về CIP và COP?",
+    "choice1": "CIP là phương pháp vệ sinh bằng tay, còn COP là vệ sinh tự động toàn bộ hệ thống.",
+    "choice2": "CIP (Cleaning in Place) là vệ sinh tại chỗ mà không cần tháo rời thiết bị, còn COP (Cleaning out of Place) là vệ sinh bằng cách tháo rời thiết bị và làm sạch riêng biệt.",
+    "choice3": "CIP và COP đều là quy trình kiểm tra sản phẩm cuối cùng.",
+    "choice4": "CIP và COP là hai phương pháp kiểm định chất lượng nước đầu vào trong sản xuất.",
+    "answer": 2
+  },
+  {
+    "question": "Trong sản xuất thực phẩm, phương pháp vệ sinh nào sau đây thường được áp dụng cho đường ống, bồn chứa và hệ thống khép kín, không cần tháo rời thiết bị?",
+    "choice1": "CIP – Vệ sinh tại chỗ",
+    "choice2": "COP – Vệ sinh ngoài thiết bị",
+    "choice3": "GMP – Thực hành sản xuất tốt",
+    "choice4": "GHP – Thực hành vệ sinh tốt",
+    "answer": 1
+  },
+  {
+    "question": "Bước nào sau đây không thuộc trong quy trình CIP line 1 (chỉ sản xuất nước khoáng 375)",
+    "choice1": "Divoflow",
+    "choice2": "Chlorine",
+    "choice3": "Acid citric",
+    "choice4": "Nước RO 20",
+    "answer": 1
+  },
+  {
+    "question": "Khi quy trình CIP có sử dụng hóa chất nào sau đây thì cần phải đo chỉ tiêu \"\"Hợp chất hữu cơ\"\"?",
+    "choice1": "Divoflow",
+    "choice2": "Nước RO 20",
+    "choice3": "Acid  hydrochloric ",
+    "choice4": "Acid citric",
+    "answer": 4
+  },
+  {
+    "question": "Trước khi sản xuất, các chỉ tiêu chất lượng nào bắt buộc phải đo bất kể sử dụng quy trình CIP nào?",
+    "choice1": "Trạng thái (cặn/không cặn), màu, mùi, vị",
+    "choice2": "Hợp chất hữu cơ",
+    "choice3": "Chlorine dư",
+    "choice4": "Tất cả đều đúng",
+    "answer": 1
+  },
+  {
+    "question": "Sau quá trình CIP, chỉ tiêu \"\"Hợp chất hữu cơ\"\" vượt tiêu chuẩn trong nước tráng cuối, điều này thể hiện hóa chất nào chưa được xả sạch?",
+    "choice1": "Acid citric",
+    "choice2": "Chlorine",
+    "choice3": "Divoflow",
+    "choice4": "Cyclodextrin",
+    "answer": 1
+  },
+  {
+    "question": "Hóa chất nào đang được sử dụng để xông phòng?",
+    "choice1": "Formol",
+    "choice2": "Chlorine",
+    "choice3": "Divoflow",
+    "choice4": "Oxonia",
+    "answer": 4
   }
 ];
 

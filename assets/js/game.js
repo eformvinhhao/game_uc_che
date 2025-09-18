@@ -333,12 +333,11 @@ let questions = [
 //CONSTANTS
 const INCORRECT_TAX = 100;
 const MAX_QUESTIONS = 100;
-const thoi_gian_max = 600000;
+const thoi_gian_max = 1200000;
 
 // Start Game & Timer
 startGame = () => {
   questionCounter = 0;
-  diem_tong = 100;
   availableQuesions = [...questions];
   getNewQuestion();
   // Timer

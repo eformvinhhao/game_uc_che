@@ -21,9 +21,9 @@ h4 {
 }
 
 h1 {
-  font-size: 5.4rem;
+  font-size: 3.4rem;
   color: #56a5eb;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -34,7 +34,7 @@ h1 > span {
 
 h2 {
   font-size: 4.2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   font-weight: 700;
 }
 

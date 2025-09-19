@@ -15,7 +15,7 @@ searchInput.addEventListener("input", e => {
 })
 
 
-fetch("https://eformvinhhao.github.io/game_uc_che/ketqua.json")
+fetch("https://eformvinhhao.github.io/jsonapi/db.json")
   .then(res => res.json())
   .then(data => {
     users = data.map(user => {

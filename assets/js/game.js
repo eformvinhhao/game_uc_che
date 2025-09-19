@@ -550,7 +550,7 @@ let questions =[
     "choice2": "330.3",
     "choice3": "330.35",
     "choice4": "330.4",
-    "answer": "330"
+    "answer": "330.4"
   },
   {
     "question": "Nhân viên A đo thể tích của 5 chai sản phẩm Wake-up 247 (mL) là: 330.1, 330.3, 330.2, 330.4, 330.5. Trung vị (median) thể tích là bao nhiêu?",
@@ -558,7 +558,7 @@ let questions =[
     "choice2": "330.3",
     "choice3": "330.35",
     "choice4": "330.4",
-    "answer": "330"
+    "answer": "330.3"
   },
   {
     "question": "Nếu dữ liệu đo lường sản phẩm có độ lệch chuẩn (standard deviation) càng nhỏ, việc này cho thấy điều gì?",

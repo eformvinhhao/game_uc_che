@@ -8,7 +8,7 @@ let users = []
 searchInput.addEventListener("input", e => {
   const value = e.target.value.toLowerCase()
   users.forEach(user => { 
-    const isVisible = user.Name.toLowerCase().includes(value)
+    const isVisible = user.Name.toLowerCase().includes(value) ||  user.Name.includes('Họ và tên')
     user.element.classList.toggle("hide", !isVisible)
 
   })

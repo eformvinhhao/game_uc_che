@@ -10,6 +10,7 @@ let currentQuestion = {};
 let acceptingAnswers = false;
 let so_cau_dung = 0 ;
 let so_cau_sai = 0;
+let so_cau_saiText = 0;
 let diem_tru_so_cau_sai = 0;
 let thoi_gian_su_dung = 0;
 let questionCounter = 0;
@@ -833,13 +834,19 @@ startGame = () => {
   setInterval(function () {
     thoi_gian_su_dung ++;
     thoi_gian_su_dungText.innerText = `${thoi_gian_su_dung}/${thoi_gian_max/1000}`;
-    if (so_cau_sai === 1 || thoi_gian_su_dung*1000 === thoi_gian_max) {
+    
+    if (so_cau_sai !== 0 ) {
+      localStorage.setItem("so_cau_dung", questionCounter-1);
+      localStorage.setItem("so_cau_sai", so_cau_sai);
+      localStorage.setItem("thoi_gian_su_dung", thoi_gian_su_dung);
+      window.location.assign("../../assets/html/end.html");
+    }
+    if (thoi_gian_su_dung*1000 === 5000) {
       localStorage.setItem("so_cau_dung", questionCounter-1);
       localStorage.setItem("so_cau_sai", so_cau_sai);
       localStorage.setItem("thoi_gian_su_dung", thoi_gian_su_dung)
-
-      //go to the end page
-      return window.location.assign("../../assets/html/end.html");
+      window.location.assign("../../assets/html/end.html");
+      alert("Hết giờ rồi!")
     }
   }, 1000);
 };
@@ -850,8 +857,6 @@ getNewQuestion = () => {
     localStorage.setItem("so_cau_dung", questionCounter-1);
     localStorage.setItem("so_cau_sai", so_cau_sai);
     localStorage.setItem("thoi_gian_su_dung", thoi_gian_su_dung)
-
-    //go to the end page
     return window.location.assign("../html/end.html");
   }
   questionCounter++;
@@ -901,6 +906,9 @@ choices.forEach(choice => {
       selectedAnswer == currentQuestion.answer ? 'correct' : "incorrect";
 
     if (classToApply === "incorrect") {
+      setTimeout(() => {
+        alert("Sai rồi!")
+      }, 50);
       decrementScore(INCORRECT_TAX);
     }
 

@@ -15,7 +15,7 @@ let thoi_gian_su_dung = 0;
 let questionCounter = 0;
 let availableQuesions = [];
 
-let questions = [
+let questions =[
   {
     "question": "Nước sau làm mềm là nước có đặc điểm nào sau đây?",
     "choice1": "Nhiều canxi và magie",
@@ -361,7 +361,7 @@ let questions = [
     "answer": "Trạng thái (cặn/không cặn), màu, mùi, vị"
   },
   {
-    "question": "Sau quá trình CIP, chỉ tiêu \"\"Hợp chất hữu cơ\"\" vượt tiêu chuẩn trong nước tráng cuối, điều này thể hiện hóa chất nào chưa được xả sạch?",
+    "question": "Sau quá trình CIP, chỉ tiêu Hợp chất hữu cơ vượt tiêu chuẩn trong nước tráng cuối, điều này thể hiện hóa chất nào chưa được xả sạch?",
     "choice1": "Acid citric",
     "choice2": "Chlorine",
     "choice3": "Divoflow",
@@ -409,38 +409,6 @@ let questions = [
     "answer": "Cảm quan"
   },
   {
-    "question": "Acid final syrup Wake up 247 cao cần bổ sung?",
-    "choice1": "Vitamin",
-    "choice2": "Đường",
-    "choice3": "Acid citric",
-    "choice4": "Muối",
-    "answer": "Acid citric"
-  },
-  {
-    "question": "Acid final syrup Wake up 247 thấp cần bổ sung?",
-    "choice1": "Potassium sorbate",
-    "choice2": "Muối",
-    "choice3": "Đường",
-    "choice4": "Acid citric",
-    "answer": "Acid citric"
-  },
-  {
-    "question": "Thiết bị dùng để tiệt trùng vi sinh tại khu chế biến mới?",
-    "choice1": "Ozone",
-    "choice2": "UV",
-    "choice3": "Nhiệt",
-    "choice4": "Tất cả đáp án trên",
-    "answer": "Ozone"
-  },
-  {
-    "question": "Đường dùng để nấu CPC cà phê 1.5L ? ",
-    "choice1": "Đường RE",
-    "choice2": "Đường fuctose",
-    "choice3": "Cả 1&2 đều đúng",
-    "choice4": "Cả 1&2 đều sai",
-    "answer": "Đường fuctose"
-  },
-  {
     "question": "Nước dùng để nấu đường Wake up 247?",
     "choice1": "TDS 375",
     "choice2": "TDS 1900",
@@ -465,148 +433,12 @@ let questions = [
     "answer": "30"
   },
   {
-    "question": "Tỷ lệ phối syrup - nước RO 20 của Lemona cho mẻ syrup 8m3=> 6400m3 thành phẩm?",
-    "choice1": "1-Mar",
-    "choice2": "1-Aug",
-    "choice3": "1-Jul",
-    "choice4": "1-May",
-    "answer": "1-May"
-  },
-  {
-    "question": "Tỷ lệ phối syrup - nước RO 20 của Wake up cho mẻ syrup 8m3=> 3200m3 thành phẩm?",
-    "choice1": "1-Jul",
-    "choice2": "1-May",
-    "choice3": "1-Mar",
-    "choice4": "1-Apr",
-    "answer": "1-Mar"
-  },
-  {
-    "question": "Khu vực nấu syrup chế biến mới là vùng?",
-    "choice1": "Vàng",
-    "choice2": "Đỏ",
-    "choice3": "Xanh",
-    "choice4": "Không có đáp đúng",
-    "answer": "Vàng"
-  },
-  {
-    "question": "Khu vực nấu syrup chế biến cũ là vùng?",
-    "choice1": "Xanh",
-    "choice2": "Đỏ",
-    "choice3": "Không có đáp đúng",
-    "choice4": "Vàng",
-    "answer": "Đỏ"
-  },
-  {
-    "question": "Brix final syrup Lemona?",
-    "choice1": "55.2",
-    "choice2": "56",
-    "choice3": "55.7",
-    "choice4": "60",
-    "answer": "56"
-  },
-  {
-    "question": "Brix thành phẩm Lemona?",
-    "choice1": "16.5",
-    "choice2": "12.2",
-    "choice3": "6.8",
-    "choice4": "8.5",
-    "answer": "9"
-  },
-  {
-    "question": "Wake up 247 là nước giải khát hay tăng lực?",
-    "choice1": "Tăng lực",
-    "choice2": "Giải khát",
-    "choice3": "Cả 1&2 đều đúng",
-    "choice4": "Cả 1&2 đều sai",
-    "answer": "Tăng lực"
-  },
-  {
-    "question": "Lemona là nước giải khát hay tăng lực?",
-    "choice1": "Giải khát",
-    "choice2": "Tăng lực",
-    "choice3": "Cả 1&2 đều đúng",
-    "choice4": "Cả 1&2 đều sai",
-    "answer": "Tăng lực"
-  },
-  {
-    "question": "Chu kỳ CIP các tank tại chế biến khi nấu Wake 247 là?",
-    "choice1": "72 h",
-    "choice2": "90 h",
-    "choice3": "96 h",
-    "choice4": "144 h",
-    "answer": "96 h"
-  },
-  {
     "question": "Vị của sản phẩm Wake up 247 được mô tả ra sao?",
     "choice1": "Đắng gắt, chua gắt",
     "choice2": "Vừa, có vị chua nhẹ",
     "choice3": "Ngọt vừa, có vị đắng của cà phê, không có vị lạ",
     "choice4": "Mặn nhẹ",
     "answer": "Ngọt vừa, có vị đắng của cà phê, không có vị lạ"
-  },
-  {
-    "question": "CO2 Wake up 247 nạp vào chai cao hơn tiêu chuẩn có rủi ro?",
-    "choice1": "Nhiễm vi sinh",
-    "choice2": "Nhiễm mùi",
-    "choice3": "Mềm chai",
-    "choice4": "Nứt, bể chai",
-    "answer": "Nhiễm vi sinh"
-  },
-  {
-    "question": "Nhiệt độ chiết sản phẩm W247 line 4?",
-    "choice1": "22",
-    "choice2": "28",
-    "choice3": "10",
-    "choice4": "16",
-    "answer": "16"
-  },
-  {
-    "question": "Nhiệt độ Warmer line 4?",
-    "choice1": "30",
-    "choice2": "40",
-    "choice3": "50",
-    "choice4": "60",
-    "answer": "40"
-  },
-  {
-    "question": "Sản phẩm Wake up 247 line 4 sử dụng máy?",
-    "choice1": "Phóng nhãn",
-    "choice2": "Dán nhãn",
-    "choice3": "Cả 1&2 đều đúng",
-    "choice4": "Cả 1&2 đều sai",
-    "answer": "Dán nhãn"
-  },
-  {
-    "question": "Mực chiết chai Wake up 247 line 4?",
-    "choice1": "350 ml",
-    "choice2": "320ml",
-    "choice3": "330ml",
-    "choice4": "300ml",
-    "answer": "330ml"
-  },
-  {
-    "question": "Mực chiết lon Whisky line 5?",
-    "choice1": "500ml",
-    "choice2": "330ml",
-    "choice3": "450ml",
-    "choice4": "320ml",
-    "answer": "320ml"
-  },
-  {
-    "question": "Hạn sử dụng của lon Wake up 247 ?",
-    "choice1": "9 tháng",
-    "choice2": "18 tháng",
-    "choice3": "12 tháng",
-    "choice4": "15 tháng",
-    "answer": "9 tháng"
-  },
-  {
-    "question": "Hạn sử dụng của lon Wake up 247 xuất khẩu mỹ ?",
-    "choice1": "9 tháng",
-    "choice2": "18 tháng",
-    "choice3": "12 tháng",
-    "choice4": "15 tháng",
-    "answer": "15 tháng"
   },
   {
     "question": "Khi nấu Lemona, vận hành A quên đẩy nước tráng acid làm lượng acid hồi về tank đang nấu sodium benzoate, hiện tượng nào sau đây xảy ra?",
@@ -919,6 +751,70 @@ let questions = [
     "choice3": "Không vấn đề gì",
     "choice4": "Máy móc hoạt động tốt hơn kỳ vọng",
     "answer": "Quá trình mất kiểm soát, dù sản phẩm có thể đạt"
+  },
+  {
+    "question": "Cát ODM 2F dùng để làm gì trong hệ thống nước TDS 1900?",
+    "choice1": "Hấp phụ Clorine trong nước",
+    "choice2": "Loại bỏ vi sinh",
+    "choice3": "Khử flo",
+    "choice4": "Khử sắt",
+    "answer": "Khử sắt"
+  },
+  {
+    "question": "Flo trong nước nguồn 1900 được loại bỏ qua hệ thống nào?",
+    "choice1": "Màng RO",
+    "choice2": "Lọc than",
+    "choice3": "Lọc cát",
+    "choice4": "Làm mềm",
+    "answer": "Màng RO"
+  },
+  {
+    "question": "TDS nước 80 cao?",
+    "choice1": "Giảm tỉ lệ phối nước 1900",
+    "choice2": "Giảm tỉ lệ phối nước TDS 20",
+    "choice3": "Giảm độ cứng nước",
+    "choice4": "Giảm lưu lượng nước",
+    "answer": "Giảm tỉ lệ phối nước 1900"
+  },
+  {
+    "question": "Điều gì xảy ra khi hạt nhựa trao đổi ion đã bão hòa mà không được tái sinh kịp thời?",
+    "choice1": "pH nước giảm",
+    "choice2": "Độ cứng nước sau làm mềm tăng",
+    "choice3": "HCO3- sau làm mềm tăng",
+    "choice4": "Độ cứng sau làm mềm giảm",
+    "answer": "Độ cứng nước sau làm mềm tăng"
+  },
+  {
+    "question": "Cơ chế hoạt động của lọc than?",
+    "choice1": "Quá trình trao đổi ion",
+    "choice2": "Quá trình hấp thụ",
+    "choice3": "Quá trình hấp phụ",
+    "choice4": "Quá trình lắng",
+    "answer": "Quá trình hấp phụ"
+  },
+  {
+    "question": "Khi than hoạt tính nước TDS 250 bão hòa, nước sau lọc than sẽ ?",
+    "choice1": "Độ cứng nước cao",
+    "choice2": "Nước lẫn bụi than",
+    "choice3": "Nhiễm vi sinh",
+    "choice4": "Nước có nồng độ clorine cao",
+    "answer": "Nước có nồng độ clorine cao"
+  },
+  {
+    "question": "Clorine tráng chai sử dụng loại nước nào?",
+    "choice1": "TDS 250",
+    "choice2": "TDS 220",
+    "choice3": "TDS 375",
+    "choice4": "TDS 20",
+    "answer": "TDS 20"
+  },
+  {
+    "question": "Khi bị ngộ độc thực phẩm, thì nơi có người ngộ độc thực phẩm báo cho cơ quan nào?",
+    "choice1": "Cơ sở y tế gần nhất",
+    "choice2": "Hội tiêu chuẩn và bảo vệ quyền lợi người tiêu dùng.",
+    "choice3": "Chi cục Quản lý thị trường.",
+    "choice4": "Chi cục an toàn thực phẩm.",
+    "answer": "Cơ sở y tế gần nhất"
   }
 ];
 

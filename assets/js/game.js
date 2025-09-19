@@ -508,7 +508,8 @@ let questions = [
 
 //CONSTANTS
 const INCORRECT_TAX = 100;
-const MAX_QUESTIONS = 200;
+const MAX_QUESTIONS = questions.length;
+console.log(MAX_QUESTIONS)
 const thoi_gian_max = 600000;
 
 // Start Game & Timer

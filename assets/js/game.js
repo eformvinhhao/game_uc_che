@@ -841,7 +841,7 @@ startGame = () => {
       localStorage.setItem("thoi_gian_su_dung", thoi_gian_su_dung);
       window.location.assign("../../assets/html/end.html");
     }
-    if (thoi_gian_su_dung*1000 === 5000) {
+    if (thoi_gian_su_dung*1000 === thoi_gian_max) {
       localStorage.setItem("so_cau_dung", questionCounter-1);
       localStorage.setItem("so_cau_sai", so_cau_sai);
       localStorage.setItem("thoi_gian_su_dung", thoi_gian_su_dung)

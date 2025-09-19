@@ -17,6 +17,630 @@ let availableQuesions = [];
 
 let questions = [
   {
+    "question": "Nước sau làm mềm là nước có đặc điểm nào sau đây?",
+    "choice1": "Nhiều canxi và magie",
+    "choice2": "Không có độ pH",
+    "choice3": "Độ cứng thấp",
+    "choice4": "Nhiều chất rắn lơ lửng",
+    "answer": "Độ cứng thấp"
+  },
+  {
+    "question": "Ion bicarbonate (HCO₃⁻) là thành phần chính trong nước khoáng Vĩnh Hảo, vai trò của ion này là gì?",
+    "choice1": "Tăng độ pH đột ngột",
+    "choice2": "Giảm độ pH đột ngột",
+    "choice3": "Làm tăng độ cứng",
+    "choice4": "Duy trì tính đệm (buffer) của nước",
+    "answer": "Duy trì tính đệm (buffer) của nước"
+  },
+  {
+    "question": "Ion bicarbonate (HCO₃⁻) trong nước khoáng Vĩnh Hảo có thể làm tăng tính chất nào sau đây?",
+    "choice1": "Tính kiềm nhẹ",
+    "choice2": "Tính axit nhẹ",
+    "choice3": "Tính kiềm mạnh",
+    "choice4": "Tính axit mạnh",
+    "answer": "Tính kiềm nhẹ"
+  },
+  {
+    "question": "Sau quá trình làm mềm, chỉ tiêu nào sau đây sẽ giảm?",
+    "choice1": "Hàm lượng nitrate",
+    "choice2": "Hàm lượng canxi",
+    "choice3": "Hàm lượng flo",
+    "choice4": "Cả 3 câu trên đều đúng",
+    "answer": "Hàm lượng canxi"
+  },
+  {
+    "question": "Quá trình lọc than để loại bỏ chất nào dưới đây?",
+    "choice1": "Chlorine dư",
+    "choice2": "Flo dư",
+    "choice3": "Nitrate dư",
+    "choice4": "Canxi dư",
+    "answer": "Chlorine dư"
+  },
+  {
+    "question": "Removing torque là gì?",
+    "choice1": "Lực cần thiết để vặn nắp chai vào chai",
+    "choice2": "Lực cần thiết để mở nắp chai ra khỏi chai",
+    "choice3": "Lực tác động lên thân chai khi vận chuyển",
+    "choice4": "Lực đo được khi kiểm tra áp suất trong chai",
+    "answer": "Lực cần thiết để mở nắp chai ra khỏi chai"
+  },
+  {
+    "question": "Application torque là gì?",
+    "choice1": "Lực vặn nắp để đóng chặt nắp lên chai",
+    "choice2": "Lực mở nắp khi sử dụng sản phẩm",
+    "choice3": "Lực tác động lên đáy chai khi đóng gói",
+    "choice4": "Lực kiểm tra độ bền của nắp",
+    "answer": "Lực vặn nắp để đóng chặt nắp lên chai"
+  },
+  {
+    "question": "Nếu lực mở nắp quá cao, điều gì có thể xảy ra?",
+    "choice1": "Nắp dễ bung ra trong quá trình vận chuyển",
+    "choice2": "Người tiêu dùng gặp khó khăn khi mở nắp",
+    "choice3": "Sản phẩm nhanh bị hỏng do mất kín",
+    "choice4": "Nắp chai bị biến dạng ngay khi đóng",
+    "answer": "Người tiêu dùng gặp khó khăn khi mở nắp"
+  },
+  {
+    "question": "Nếu lực mở nắp quá thấp, điều gì có thể xảy ra?",
+    "choice1": "Nắp dễ bị xì, bung",
+    "choice2": "Người tiêu dùng gặp khó khăn khi mở nắp",
+    "choice3": "Chai bị nứt do áp lực trong chai tăng",
+    "choice4": "Sản phẩm có mùi vị ngon hơn",
+    "answer": "Nắp dễ bị xì, bung"
+  },
+  {
+    "question": "Đối với chỉ tiêu Top Load, chai rỗng thường được kiểm tra bằng cách nào?",
+    "choice1": "Đặt tải trọng từ trên xuống tăng dần cho đến khi chai bị biến dạng",
+    "choice2": "Lắc sản phẩm liên tục",
+    "choice3": "Đóng mở nắp nhiều lần",
+    "choice4": "Thả tự do từ độ cao 1 mét",
+    "answer": "Đặt tải trọng từ trên xuống tăng dần cho đến khi chai bị biến dạng"
+  },
+  {
+    "question": "Nếu chai có chỉ số Top Load thấp, điều gì có thể xảy ra trong quá trình vận chuyển?",
+    "choice1": "Sản phẩm sẽ dễ bị biến dạng hoặc vỡ dưới trọng lượng chồng lên",
+    "choice2": "Sản phẩm có thể mở nắp dễ dàng hơn",
+    "choice3": "Sản phẩm không bị ảnh hưởng gì khi vận chuyển",
+    "choice4": "Sản phẩm giữ được gas tốt hơn",
+    "answer": "Sản phẩm sẽ dễ bị biến dạng hoặc vỡ dưới trọng lượng chồng lên"
+  },
+  {
+    "question": "Tại sao chỉ số Top Load quan trọng trong sản xuất chai PET?",
+    "choice1": "Để xác định độ bền màu sắc của sản phẩm",
+    "choice2": "Để đảm bảo sản phẩm chịu được tải trọng khi xếp chồng và vận chuyển",
+    "choice3": "Để kiểm tra khả năng chống thấm nước",
+    "choice4": "Để đo độ kín khí của nắp chai",
+    "answer": "Để đảm bảo sản phẩm chịu được tải trọng khi xếp chồng và vận chuyển"
+  },
+  {
+    "question": "Mục đích chính của Ship Test là gì?",
+    "choice1": "Đánh giá khả năng tái chế của bao bì",
+    "choice2": "Đo mức độ carbon phát thải trong quá trình giao hàng",
+    "choice3": "Mô phỏng điều kiện vận chuyển để đánh giá độ bền và tính ổn định của sản phẩm",
+    "choice4": "Kiểm tra màu sắc sản phẩm sau khi đóng gói",
+    "answer": "Mô phỏng điều kiện vận chuyển để đánh giá độ bền và tính ổn định của sản phẩm"
+  },
+  {
+    "question": "Ship Test thường bao gồm những yếu tố mô phỏng nào sau đây?",
+    "choice1": "Rung động khi xe chạy",
+    "choice2": "Va đập hoặc rơi rớt sản phẩm",
+    "choice3": "Thay đổi nhiệt độ và độ ẩm",
+    "choice4": "Tất cả đều đúng",
+    "answer": "Tất cả đều đúng"
+  },
+  {
+    "question": "Nếu sản phẩm không đạt Ship Test, điều gì có thể xảy ra?",
+    "choice1": "Bao bì không thể tái sử dụng",
+    "choice2": "Sản phẩm có thể bị hỏng, rò rỉ hoặc biến dạng khi đến tay khách hàng",
+    "choice3": "Thời gian giao hàng bị chậm",
+    "choice4": "Giảm mức độ carbon phát thải trong quá trình giao hàng",
+    "answer": "Sản phẩm có thể bị hỏng, rò rỉ hoặc biến dạng khi đến tay khách hàng"
+  },
+  {
+    "question": "Yếu tố nào không ảnh hưởng trực tiếp đến chất lượng sản phẩm trong suốt thời gian bảo quản?",
+    "choice1": "Nhiệt độ bảo quản",
+    "choice2": "Độ kín của bao bì",
+    "choice3": "Vận tốc máy đóng nắp",
+    "choice4": "Ánh sáng nơi trưng bày",
+    "answer": "Vận tốc máy đóng nắp"
+  },
+  {
+    "question": "Tại sao cần theo dõi cảm quan (màu sắc, mùi, vị) trong suốt thời hạn sử dụng ?",
+    "choice1": "Vì đó là yêu cầu của kế toán",
+    "choice2": "Vì cảm quan phản ánh chính xác chất lượng sản phẩm từ góc độ người tiêu dùng",
+    "choice3": "Vì cảm quan dễ đo hơn vi sinh",
+    "choice4": "Vì cảm quan ảnh hưởng đến thời gian giao hàng",
+    "answer": "Vì cảm quan phản ánh chính xác chất lượng sản phẩm từ góc độ người tiêu dùng"
+  },
+  {
+    "question": "Biến đổi nào sau đây bắt buộc không được phép vi phạm trong suốt thời gian shelf life của sản phẩm?",
+    "choice1": "Bao bì phai màu nhẹ",
+    "choice2": "Vi sinh vật tăng sinh vượt quy định",
+    "choice3": "Nhãn hơi hở mí",
+    "choice4": "Chai mềm do mất gas dần",
+    "answer": "Vi sinh vật tăng sinh vượt quy định"
+  },
+  {
+    "question": "Nhiệt độ bảo quản có ảnh hưởng đến shelf life của sản phẩm không?",
+    "choice1": "Không ảnh hưởng nếu sản phẩm đã đóng kín",
+    "choice2": "Có ảnh hưởng, nhiệt độ cao có thể làm giảm shelf life",
+    "choice3": "Không ảnh hưởng nếu sản phẩm bảo quản trong thùng carton",
+    "choice4": "Chỉ ảnh hưởng đến bao bì, không ảnh hưởng đến chất lượng bên trong",
+    "answer": "Có ảnh hưởng, nhiệt độ cao có thể làm giảm shelf life"
+  },
+  {
+    "question": "\"\"Shelf life\"\" của sản phẩm là gì?",
+    "choice1": "Thời gian sản phẩm được lưu kho trước khi giao hàng",
+    "choice2": "Thời gian vận chuyển sản phẩm từ nhà máy đến đại lý",
+    "choice3": "Khoảng thời gian sản phẩm giữ được chất lượng tiêu chuẩn trong điều kiện bảo quản quy định",
+    "choice4": "Thời gian sản phẩm có mặt trên kệ siêu thị",
+    "answer": "Khoảng thời gian sản phẩm giữ được chất lượng tiêu chuẩn trong điều kiện bảo quản quy định"
+  },
+  {
+    "question": "Drop test là gì?",
+    "choice1": "Kiểm tra khả năng sản phẩm chịu được áp suất bên trong",
+    "choice2": "Kiểm tra phản ứng sản phẩm với thay đổi nhiệt độ",
+    "choice3": "Kiểm tra độ bền của sản phẩm/bao bì khi bị rơi từ độ cao nhất định",
+    "choice4": "Kiểm tra tốc độ lão hóa của sản phẩm",
+    "answer": "Kiểm tra độ bền của sản phẩm/bao bì khi bị rơi từ độ cao nhất định"
+  },
+  {
+    "question": "Tiêu chí nào để đánh giá chỉ tiêu Drop test không đạt?",
+    "choice1": "Bao bì bị rách, móp, vỡ",
+    "choice2": "Mực in phai màu",
+    "choice3": "Chai bị đổi màu",
+    "choice4": "Cả 3 câu trên đều đúng",
+    "answer": "Bao bì bị rách, móp, vỡ"
+  },
+  {
+    "question": "Drop test thường được thực hiện trên điều kiện nào?",
+    "choice1": "Chai/lon rỗng chưa đóng nắp",
+    "choice2": "Sản phẩm đã hoàn thiện và đóng gói như thực tế sử dụng",
+    "choice3": "Bao bì phẳng chưa tạo hình",
+    "choice4": "Thiết bị máy móc",
+    "answer": "Sản phẩm đã hoàn thiện và đóng gói như thực tế sử dụng"
+  },
+  {
+    "question": "Drop test nên được thực hiện ở đâu?",
+    "choice1": "Nơi có nhiệt độ âm sâu để tăng áp lực",
+    "choice2": "Môi trường thực tế như sàn gạch, bê tông hoặc bề mặt chuẩn theo tiêu chuẩn",
+    "choice3": "Trong bồn nước để mô phỏng rơi chìm",
+    "choice4": "Trong phòng tối để dễ quan sát",
+    "answer": "Môi trường thực tế như sàn gạch, bê tông hoặc bề mặt chuẩn theo tiêu chuẩn"
+  },
+  {
+    "question": "Chỉ tiêu SST còn gọi là gì?",
+    "choice1": "Độ ngọt",
+    "choice2": "Lực đóng nắp",
+    "choice3": "Độ kín nắp",
+    "choice4": "Lực mở nắp",
+    "answer": "Độ kín nắp"
+  },
+  {
+    "question": "Tiêu chuẩn SST của sản phẩm không gas là bao nhiêu?",
+    "choice1": "Không xì ở 50 psi, không bung ở 100 psi",
+    "choice2": "Không xì, không bung ở cả 50 và 100 psi",
+    "choice3": "Xì ở 50 psi nhưng không bung ở 100 psi",
+    "choice4": "Không xì ở 100 psi, không bung ở 150 psi",
+    "answer": "Không xì ở 50 psi, không bung ở 100 psi"
+  },
+  {
+    "question": "Tiêu chuẩn SST của sản phẩm có gas là bao nhiêu?",
+    "choice1": "Không xì ở 50 psi, không bung ở 100 psi",
+    "choice2": "Không xì, không bung ở cả 100 và 150 psi",
+    "choice3": "Xì ở 50 psi nhưng không bung ở 100 psi",
+    "choice4": "Không xì ở 100 psi, không bung ở 150 psi",
+    "answer": "Không xì ở 100 psi, không bung ở 150 psi"
+  },
+  {
+    "question": "Tiêu chuẩn nhãn lệch mí là bao nhiêu?",
+    "choice1": ">1 mm",
+    "choice2": ">1.5 mm",
+    "choice3": ">2 mm",
+    "choice4": ">2.5 mm",
+    "answer": ">2 mm"
+  },
+  {
+    "question": "HACCP là gì?",
+    "choice1": "Một hệ thống kiểm tra chất lượng sản phẩm sau khi sản xuất",
+    "choice2": "Một quy trình kiểm tra cảm quan thực phẩm",
+    "choice3": "Hệ thống phân tích mối nguy và kiểm soát điểm tới hạn trong sản xuất thực phẩm",
+    "choice4": "Một tiêu chuẩn về đóng gói và bảo quản thực phẩm",
+    "answer": "Hệ thống phân tích mối nguy và kiểm soát điểm tới hạn trong sản xuất thực phẩm"
+  },
+  {
+    "question": "CCP là gì?",
+    "choice1": "Quy trình kiểm tra cảm quan nguyên liệu đầu vào",
+    "choice2": "Điểm kiểm soát tới hạn trong quá trình sản xuất nhằm loại bỏ hoặc giảm mối nguy đến mức chấp nhận được",
+    "choice3": "Kế hoạch dự phòng khi có sự cố xảy ra trong sản xuất",
+    "choice4": "Hệ thống quản lý chất lượng dựa trên tiêu chuẩn ISO 9001",
+    "answer": "Điểm kiểm soát tới hạn trong quá trình sản xuất nhằm loại bỏ hoặc giảm mối nguy đến mức chấp nhận được"
+  },
+  {
+    "question": "OPRP là gì?",
+    "choice1": "Quy trình vận hành thường ngày trong doanh nghiệp",
+    "choice2": "Biện pháp kiểm soát mối nguy không đáng kể trong hệ thống ISO 9001",
+    "choice3": "Biện pháp kiểm soát mối nguy quan trọng nhưng không được phân loại là CCP, thuộc chương trình tiên quyết vận hành",
+    "choice4": "Quy trình kiểm nghiệm vi sinh vật trong thực phẩm",
+    "answer": "Biện pháp kiểm soát mối nguy quan trọng nhưng không được phân loại là CCP, thuộc chương trình tiên quyết vận hành"
+  },
+  {
+    "question": "Mối nguy đáng kể trong hệ thống HACCP là gì?",
+    "choice1": "Mối nguy có khả năng xảy ra và/hoặc gây hậu quả nghiêm trọng đến an toàn thực phẩm, cần được kiểm soát bằng biện pháp cụ thể",
+    "choice2": "Mối nguy có thể xảy ra nhưng không ảnh hưởng đến chất lượng sản phẩm",
+    "choice3": "Mối nguy có thể được kiểm soát hoàn toàn bởi chương trình tiên quyết (PRP), không cần phân tích thêm",
+    "choice4": "Mối nguy có liên quan đến yếu tố cảm quan hoặc thẩm mỹ của sản phẩm nhưng không ảnh hưởng đến sức khỏe",
+    "answer": "Mối nguy có khả năng xảy ra và/hoặc gây hậu quả nghiêm trọng đến an toàn thực phẩm, cần được kiểm soát bằng biện pháp cụ thể"
+  },
+  {
+    "question": "Vi sinh vật nào sau đây không nằm trong danh mục vi sinh vật cần kiểm soát trong nước uống theo QCVN?",
+    "choice1": "Acid lactic bacteria",
+    "choice2": "Pseudomonas aeruginosa",
+    "choice3": "Escherichia coli",
+    "choice4": "Coliform tổng số",
+    "answer": "Acid lactic bacteria"
+  },
+  {
+    "question": "Phát biểu nào sau đây về Pseudomonas aeruginosa trong nước uống là đúng theo QCVN 6-1: 2010/BYT?",
+    "choice1": "Đây là vi khuẩn cơ hội, bắt buộc không được phát hiện trong mẫu nước uống đóng chai",
+    "choice2": "Vi khuẩn này được cho phép tồn tại với số lượng giới hạn trong nước uống đóng chai",
+    "choice3": "Pseudomonas aeruginosa chỉ gây hại trong nước sinh hoạt, không cần kiểm soát trong nước uống",
+    "choice4": "Chỉ kiểm tra Pseudomonas aeruginosa khi có dấu hiệu ô nhiễm nguồn nước",
+    "answer": "Đây là vi khuẩn cơ hội, bắt buộc không được phát hiện trong mẫu nước uống đóng chai"
+  },
+  {
+    "question": "Việc kiểm soát Pseudomonas aeruginosa trong nước uống đóng chai quan trọng vì lý do nào?",
+    "choice1": "Pseudomonas aeruginosa giúp làm sạch các tạp chất trong nước",
+    "choice2": "Đây là vi khuẩn thường xuất hiện trong nước sinh hoạt, không ảnh hưởng nước đóng chai",
+    "choice3": "Vi khuẩn này không tồn tại lâu trong môi trường nước",
+    "choice4": "Vi khuẩn này gây bệnh cho mọi đối tượng, đặc biệt nguy hiểm cho người có hệ miễn dịch yếu",
+    "answer": "Vi khuẩn này gây bệnh cho mọi đối tượng, đặc biệt nguy hiểm cho người có hệ miễn dịch yếu"
+  },
+  {
+    "question": "Một cơ sở sản xuất muốn áp dụng HACCP nhưng không thực hiện đầy đủ các chương trình tiên quyết (PRP). Điều này có thể dẫn đến hậu quả gì?",
+    "choice1": "Không ảnh hưởng vì PRP không quan trọng trong HACCP",
+    "choice2": "Dễ xảy ra mối nguy không kiểm soát được ngay từ đầu, làm giảm hiệu quả hệ thống HACCP",
+    "choice3": "HACCP vẫn hoạt động bình thường mà không cần PRP",
+    "choice4": "PRP chỉ ảnh hưởng đến chất lượng, không ảnh hưởng an toàn thực phẩm",
+    "answer": "Dễ xảy ra mối nguy không kiểm soát được ngay từ đầu, làm giảm hiệu quả hệ thống HACCP"
+  },
+  {
+    "question": "Tại sao việc xác định mối nguy đáng kể là bước đầu tiên và quan trọng nhất trong hệ thống HACCP?",
+    "choice1": "Vì nó giúp tiết kiệm chi phí sản xuất",
+    "choice2": "Vì chỉ có mối nguy đáng kể mới ảnh hưởng trực tiếp đến an toàn thực phẩm và cần kiểm soát cụ thể",
+    "choice3": "Vì tất cả mối nguy đều giống nhau nên cần phải xác định rõ để phân loại",
+    "choice4": "Vì mối nguy đáng kể là những mối nguy đã được loại bỏ hoàn toàn",
+    "answer": "Vì chỉ có mối nguy đáng kể mới ảnh hưởng trực tiếp đến an toàn thực phẩm và cần kiểm soát cụ thể"
+  },
+  {
+    "question": "Nếu một CCP bị thất bại, theo HACCP bạn sẽ thực hiện bước tiếp theo nào?",
+    "choice1": "Tiếp tục sản xuất bình thường vì thất bại chỉ xảy ra tạm thời",
+    "choice2": "Dừng quá trình sản xuất và xử lý sản phẩm có khả năng bị mất an toàn",
+    "choice3": "Bỏ qua và tăng cường kiểm tra cảm quan sản phẩm sau khi hoàn thành",
+    "choice4": "Ghi nhận và báo cáo sự cố nhưng không cần hành động ngay",
+    "answer": "Dừng quá trình sản xuất và xử lý sản phẩm có khả năng bị mất an toàn"
+  },
+  {
+    "question": "Phát biểu nào sau đây mô tả đúng nhất về CIP và COP?",
+    "choice1": "CIP là phương pháp vệ sinh bằng tay, còn COP là vệ sinh tự động toàn bộ hệ thống.",
+    "choice2": "CIP (Cleaning in Place) là vệ sinh tại chỗ mà không cần tháo rời thiết bị, còn COP (Cleaning out of Place) là vệ sinh bằng cách tháo rời thiết bị và làm sạch riêng biệt.",
+    "choice3": "CIP và COP đều là quy trình kiểm tra sản phẩm cuối cùng.",
+    "choice4": "CIP và COP là hai phương pháp kiểm định chất lượng nước đầu vào trong sản xuất.",
+    "answer": "CIP (Cleaning in Place) là vệ sinh tại chỗ mà không cần tháo rời thiết bị, còn COP (Cleaning out of Place) là vệ sinh bằng cách tháo rời thiết bị và làm sạch riêng biệt."
+  },
+  {
+    "question": "Trong sản xuất thực phẩm, phương pháp vệ sinh nào sau đây thường được áp dụng cho đường ống, bồn chứa và hệ thống khép kín, không cần tháo rời thiết bị?",
+    "choice1": "CIP – Vệ sinh tại chỗ",
+    "choice2": "COP – Vệ sinh ngoài thiết bị",
+    "choice3": "GMP – Thực hành sản xuất tốt",
+    "choice4": "GHP – Thực hành vệ sinh tốt",
+    "answer": "CIP – Vệ sinh tại chỗ"
+  },
+  {
+    "question": "Bước nào sau đây không thuộc trong quy trình CIP line 1 (chỉ sản xuất nước khoáng 375)",
+    "choice1": "Divoflow",
+    "choice2": "Chlorine",
+    "choice3": "Acid citric",
+    "choice4": "Nước RO 20",
+    "answer": "Divoflow"
+  },
+  {
+    "question": "Khi quy trình CIP có sử dụng hóa chất nào sau đây thì cần phải đo chỉ tiêu \"\"Hợp chất hữu cơ\"\"?",
+    "choice1": "Divoflow",
+    "choice2": "Nước RO 20",
+    "choice3": "Acid  hydrochloric ",
+    "choice4": "Acid citric",
+    "answer": "Acid citric"
+  },
+  {
+    "question": "Trước khi sản xuất, các chỉ tiêu chất lượng nào bắt buộc phải đo bất kể sử dụng quy trình CIP nào?",
+    "choice1": "Trạng thái (cặn/không cặn), màu, mùi, vị",
+    "choice2": "Hợp chất hữu cơ",
+    "choice3": "Chlorine dư",
+    "choice4": "Tất cả đều đúng",
+    "answer": "Trạng thái (cặn/không cặn), màu, mùi, vị"
+  },
+  {
+    "question": "Sau quá trình CIP, chỉ tiêu \"\"Hợp chất hữu cơ\"\" vượt tiêu chuẩn trong nước tráng cuối, điều này thể hiện hóa chất nào chưa được xả sạch?",
+    "choice1": "Acid citric",
+    "choice2": "Chlorine",
+    "choice3": "Divoflow",
+    "choice4": "Cyclodextrin",
+    "answer": "Acid citric"
+  },
+  {
+    "question": "Hóa chất nào đang được sử dụng để xông phòng?",
+    "choice1": "Formol",
+    "choice2": "Chlorine",
+    "choice3": "Divoflow",
+    "choice4": "Oxonia",
+    "answer": "Oxonia"
+  },
+  {
+    "question": "Chỉ tiêu nào bị out khi nấu dư đường?",
+    "choice1": "Out min brix",
+    "choice2": "Out min thể tích",
+    "choice3": "Out min acid",
+    "choice4": "Out max acid",
+    "answer": "Out min acid"
+  },
+  {
+    "question": "Chỉ tiêu nào bị out khi nấu thiếu đường?",
+    "choice1": "Out max brix",
+    "choice2": "Out max thể tích",
+    "choice3": "Out min acid",
+    "choice4": "Out max acid",
+    "answer": "Out max acid"
+  },
+  {
+    "question": "Chỉ tiêu nào bị out khi nấu dư acid?",
+    "choice1": "Brix",
+    "choice2": "Thể tích",
+    "choice3": "Cảm quan",
+    "choice4": "Tất cả đều đúng",
+    "answer": "Cảm quan"
+  },
+  {
+    "question": "Chỉ tiêu nào bị out khi nấu thiếu acid?",
+    "choice1": "Cảm quan",
+    "choice2": "Thể tích",
+    "choice3": "Brix",
+    "choice4": "Tất cả đều đúng",
+    "answer": "Cảm quan"
+  },
+  {
+    "question": "Acid final syrup Wake up 247 cao cần bổ sung?",
+    "choice1": "Vitamin",
+    "choice2": "Đường",
+    "choice3": "Acid citric",
+    "choice4": "Muối",
+    "answer": "Acid citric"
+  },
+  {
+    "question": "Acid final syrup Wake up 247 thấp cần bổ sung?",
+    "choice1": "Potassium sorbate",
+    "choice2": "Muối",
+    "choice3": "Đường",
+    "choice4": "Acid citric",
+    "answer": "Acid citric"
+  },
+  {
+    "question": "Thiết bị dùng để tiệt trùng vi sinh tại khu chế biến mới?",
+    "choice1": "Ozone",
+    "choice2": "UV",
+    "choice3": "Nhiệt",
+    "choice4": "Tất cả đáp án trên",
+    "answer": "Ozone"
+  },
+  {
+    "question": "Đường dùng để nấu CPC cà phê 1.5L ? ",
+    "choice1": "Đường RE",
+    "choice2": "Đường fuctose",
+    "choice3": "Cả 1&2 đều đúng",
+    "choice4": "Cả 1&2 đều sai",
+    "answer": "Đường fuctose"
+  },
+  {
+    "question": "Nước dùng để nấu đường Wake up 247?",
+    "choice1": "TDS 375",
+    "choice2": "TDS 1900",
+    "choice3": "TDS 20",
+    "choice4": "TDS 80",
+    "answer": "TDS 20"
+  },
+  {
+    "question": "Nước dùng để nấu đường Lemona?",
+    "choice1": "TDS 1900",
+    "choice2": "TDS 20",
+    "choice3": "TDS 375",
+    "choice4": "TDS 80",
+    "answer": "TDS 1900"
+  },
+  {
+    "question": "Nhiệt độ nước nấu đường Wake up 247?",
+    "choice1": "30",
+    "choice2": "70",
+    "choice3": "100",
+    "choice4": "50",
+    "answer": "30"
+  },
+  {
+    "question": "Tỷ lệ phối syrup - nước RO 20 của Lemona cho mẻ syrup 8m3=> 6400m3 thành phẩm?",
+    "choice1": "1-Mar",
+    "choice2": "1-Aug",
+    "choice3": "1-Jul",
+    "choice4": "1-May",
+    "answer": "1-May"
+  },
+  {
+    "question": "Tỷ lệ phối syrup - nước RO 20 của Wake up cho mẻ syrup 8m3=> 3200m3 thành phẩm?",
+    "choice1": "1-Jul",
+    "choice2": "1-May",
+    "choice3": "1-Mar",
+    "choice4": "1-Apr",
+    "answer": "1-Mar"
+  },
+  {
+    "question": "Khu vực nấu syrup chế biến mới là vùng?",
+    "choice1": "Vàng",
+    "choice2": "Đỏ",
+    "choice3": "Xanh",
+    "choice4": "Không có đáp đúng",
+    "answer": "Vàng"
+  },
+  {
+    "question": "Khu vực nấu syrup chế biến cũ là vùng?",
+    "choice1": "Xanh",
+    "choice2": "Đỏ",
+    "choice3": "Không có đáp đúng",
+    "choice4": "Vàng",
+    "answer": "Đỏ"
+  },
+  {
+    "question": "Brix final syrup Lemona?",
+    "choice1": "55.2",
+    "choice2": "56",
+    "choice3": "55.7",
+    "choice4": "60",
+    "answer": "56"
+  },
+  {
+    "question": "Brix thành phẩm Lemona?",
+    "choice1": "16.5",
+    "choice2": "12.2",
+    "choice3": "6.8",
+    "choice4": "8.5",
+    "answer": "9"
+  },
+  {
+    "question": "Wake up 247 là nước giải khát hay tăng lực?",
+    "choice1": "Tăng lực",
+    "choice2": "Giải khát",
+    "choice3": "Cả 1&2 đều đúng",
+    "choice4": "Cả 1&2 đều sai",
+    "answer": "Tăng lực"
+  },
+  {
+    "question": "Lemona là nước giải khát hay tăng lực?",
+    "choice1": "Giải khát",
+    "choice2": "Tăng lực",
+    "choice3": "Cả 1&2 đều đúng",
+    "choice4": "Cả 1&2 đều sai",
+    "answer": "Tăng lực"
+  },
+  {
+    "question": "Chu kỳ CIP các tank tại chế biến khi nấu Wake 247 là?",
+    "choice1": "72 h",
+    "choice2": "90 h",
+    "choice3": "96 h",
+    "choice4": "144 h",
+    "answer": "96 h"
+  },
+  {
+    "question": "Vị của sản phẩm Wake up 247 được mô tả ra sao?",
+    "choice1": "Đắng gắt, chua gắt",
+    "choice2": "Vừa, có vị chua nhẹ",
+    "choice3": "Ngọt vừa, có vị đắng của cà phê, không có vị lạ",
+    "choice4": "Mặn nhẹ",
+    "answer": "Ngọt vừa, có vị đắng của cà phê, không có vị lạ"
+  },
+  {
+    "question": "CO2 Wake up 247 nạp vào chai cao hơn tiêu chuẩn có rủi ro?",
+    "choice1": "Nhiễm vi sinh",
+    "choice2": "Nhiễm mùi",
+    "choice3": "Mềm chai",
+    "choice4": "Nứt, bể chai",
+    "answer": "Nhiễm vi sinh"
+  },
+  {
+    "question": "Nhiệt độ chiết sản phẩm W247 line 4?",
+    "choice1": "22",
+    "choice2": "28",
+    "choice3": "10",
+    "choice4": "16",
+    "answer": "16"
+  },
+  {
+    "question": "Nhiệt độ Warmer line 4?",
+    "choice1": "30",
+    "choice2": "40",
+    "choice3": "50",
+    "choice4": "60",
+    "answer": "40"
+  },
+  {
+    "question": "Sản phẩm Wake up 247 line 4 sử dụng máy?",
+    "choice1": "Phóng nhãn",
+    "choice2": "Dán nhãn",
+    "choice3": "Cả 1&2 đều đúng",
+    "choice4": "Cả 1&2 đều sai",
+    "answer": "Dán nhãn"
+  },
+  {
+    "question": "Mực chiết chai Wake up 247 line 4?",
+    "choice1": "350 ml",
+    "choice2": "320ml",
+    "choice3": "330ml",
+    "choice4": "300ml",
+    "answer": "330ml"
+  },
+  {
+    "question": "Mực chiết lon Whisky line 5?",
+    "choice1": "500ml",
+    "choice2": "330ml",
+    "choice3": "450ml",
+    "choice4": "320ml",
+    "answer": "320ml"
+  },
+  {
+    "question": "Hạn sử dụng của lon Wake up 247 ?",
+    "choice1": "9 tháng",
+    "choice2": "18 tháng",
+    "choice3": "12 tháng",
+    "choice4": "15 tháng",
+    "answer": "9 tháng"
+  },
+  {
+    "question": "Hạn sử dụng của lon Wake up 247 xuất khẩu mỹ ?",
+    "choice1": "9 tháng",
+    "choice2": "18 tháng",
+    "choice3": "12 tháng",
+    "choice4": "15 tháng",
+    "answer": "15 tháng"
+  },
+  {
+    "question": "Khi nấu Lemona, vận hành A quên đẩy nước tráng acid làm lượng acid hồi về tank đang nấu sodium benzoate, hiện tượng nào sau đây xảy ra?",
+    "choice1": "Sủi bọt khí",
+    "choice2": "Cháy nổ",
+    "choice3": "Tạo kết tủa",
+    "choice4": "Không có hiện tượng",
+    "answer": "Tạo kết tủa"
+  },
+  {
+    "question": "Nhiệt độ đo gas của sản phẩm CSD dạng chai là bao nhiêu?",
+    "choice1": "2 - 6oC",
+    "choice2": "18 - 22oC",
+    "choice3": "Nhiệt độ hòa gas",
+    "choice4": "Nhiệt độ chiết",
+    "answer": "2 - 6oC"
+  },
+  {
+    "question": "Nhiệt độ đo gas của sản phẩm CSD dạng lon là bao nhiêu?",
+    "choice1": "2 - 6oC",
+    "choice2": "18 - 22oC",
+    "choice3": "Nhiệt độ hòa gas",
+    "choice4": "Nhiệt độ chiết",
+    "answer": "18 - 22oC"
+  },
+  {
+    "question": "Trộn trực tiếp các loại phụ gia nào sau đây trong nước không gây hiện tượng sủi bọt?",
+    "choice1": "Acid citric và sodium bicarbonate",
+    "choice2": "Taurine và sodium bicarbonate",
+    "choice3": "Acid citric và nước TDS 1900",
+    "choice4": "Acid citric và sodium citrate",
+    "answer": "Acid citric và sodium citrate"
+  },
+  {
     "question": "Một nhà máy trong năm 2024 nhận được 4 trường hợp khiếu nại từ khách hàng, với tổng số sản phẩm bị khiếu nại là 10 chai. Biết sản lượng sản xuất của nhà máy trong năm 2024 là 1 triệu chai. Hãy tính chỉ số PQCR (Product quality complaint rate) của nhà máy? Biết PQCR là tỷ lệ sản phẩm bị khiếu nại trên 1 tỷ sản phẩm sản xuất được",
     "choice1": "10000",
     "choice2": "1000",
@@ -177,332 +801,124 @@ let questions = [
     "answer": "Dữ liệu phân tán rộng hơn"
   },
   {
-    "question": "Nước sau làm mềm là nước có đặc điểm nào sau đây?",
-    "choice1": "Nhiều canxi và magie",
-    "choice2": "Không có độ pH",
-    "choice3": "Độ cứng thấp",
-    "choice4": "Nhiều chất rắn lơ lửng",
-    "answer": "Độ cứng thấp"
+    "question": "Theo Luật Western trong SPC, bao nhiêu điểm liên tiếp nằm cùng phía trung bình là dấu hiệu bất thường?",
+    "choice1": "4 điểm",
+    "choice2": "6 điểm",
+    "choice3": "7 điểm",
+    "choice4": "10 điểm",
+    "answer": "7 điểm"
   },
   {
-    "question": "Ion bicarbonate (HCO₃⁻) là thành phần chính trong nước khoáng Vĩnh Hảo, vai trò của ion này là gì?",
-    "choice1": "Tăng độ pH đột ngột",
-    "choice2": "Giảm độ pH đột ngột",
-    "choice3": "Làm tăng độ cứng",
-    "choice4": "Duy trì tính đệm (buffer) của nước",
-    "answer": "Duy trì tính đệm (buffer) của nước"
+    "question": "Điểm nào sau đây không phải là dấu hiệu phổ biến của một nguyên nhân đặc biệt trong biểu đồ kiểm soát?",
+    "choice1": "Một điểm nằm ngoài giới hạn kiểm soát",
+    "choice2": "7 điểm liên tiếp đi lên hoặc đi xuống",
+    "choice3": "6 điểm dao động quanh trung bình",
+    "choice4": "2 trong 3 điểm nằm gần giới hạn kiểm soát",
+    "answer": "6 điểm dao động quanh trung bình"
   },
   {
-    "question": "Ion bicarbonate (HCO₃⁻) trong nước khoáng Vĩnh Hảo có thể làm tăng tính chất nào sau đây?",
-    "choice1": "Tính kiềm nhẹ",
-    "choice2": "Tính axit nhẹ",
-    "choice3": "Tính kiềm mạnh",
-    "choice4": "Tính axit mạnh",
-    "answer": "Tính kiềm nhẹ"
+    "question": "Mục tiêu chính của việc áp dụng các luật SPC (như Western Rules) là gì?",
+    "choice1": "Xác định sản phẩm lỗi để loại bỏ",
+    "choice2": "Kiểm tra mẫu ngẫu nhiên",
+    "choice3": "Phát hiện nguyên nhân đặc biệt trước khi quá trình vượt ngoài kiểm soát",
+    "choice4": "Tối đa hóa sản lượng sản xuất",
+    "answer": "Phát hiện nguyên nhân đặc biệt trước khi quá trình vượt ngoài kiểm soát"
   },
   {
-    "question": "Sau quá trình làm mềm, chỉ tiêu nào sau đây sẽ giảm?",
-    "choice1": "Hàm lượng nitrate",
-    "choice2": "Hàm lượng canxi",
-    "choice3": "Hàm lượng flo",
-    "choice4": "Cả 3 câu trên đều đúng",
-    "answer": "Hàm lượng canxi"
+    "question": "Điều gì xảy ra nếu một điểm nằm ngay trên giới hạn kiểm soát trên (UCL)?",
+    "choice1": "Điểm đó không được tính là bất thường vì chưa vượt giới hạn",
+    "choice2": "Điểm đó chắc chắn là lỗi sản phẩm",
+    "choice3": "Điểm đó nên được xem xét vì sát giới hạn có thể là dấu hiệu sớm của mất kiểm soát",
+    "choice4": "Điểm đó cho thấy quá trình đang hoạt động tốt hơn bình thường",
+    "answer": "Điểm đó nên được xem xét vì sát giới hạn có thể là dấu hiệu sớm của mất kiểm soát"
   },
   {
-    "question": "Quá trình lọc than để loại bỏ chất nào dưới đây?",
-    "choice1": "Chlorine dư",
-    "choice2": "Flo dư",
-    "choice3": "Nitrate dư",
-    "choice4": "Canxi dư",
-    "answer": "Chlorine dư"
+    "question": "Giới hạn kiểm soát (UCL và LCL) thường được thiết lập ở mức nào?",
+    "choice1": "±1 sigma",
+    "choice2": "±2 sigma",
+    "choice3": "±3 sigma",
+    "choice4": "±6 sigma",
+    "answer": "±3 sigma"
   },
   {
-    "question": "Removing torque là gì?",
-    "choice1": "Lực cần thiết để vặn nắp chai vào chai",
-    "choice2": "Lực cần thiết để mở nắp chai ra khỏi chai",
-    "choice3": "Lực tác động lên thân chai khi vận chuyển",
-    "choice4": "Lực đo được khi kiểm tra áp suất trong chai",
-    "answer": "Lực cần thiết để mở nắp chai ra khỏi chai"
+    "question": "Tại sao việc phát hiện các điểm bất thường trong biểu đồ kiểm soát lại quan trọng?",
+    "choice1": "Giúp cải tiến chất lượng tài chính",
+    "choice2": "Giúp phát hiện sớm nguyên nhân đặc biệt ảnh hưởng đến quá trình",
+    "choice3": "Giúp đo tốc độ sản xuất",
+    "choice4": "Giúp kiểm tra hiệu suất của máy móc hàng ngày",
+    "answer": "Giúp phát hiện sớm nguyên nhân đặc biệt ảnh hưởng đến quá trình"
   },
   {
-    "question": "Application torque là gì?",
-    "choice1": "Lực vặn nắp để đóng chặt nắp lên chai",
-    "choice2": "Lực mở nắp khi sử dụng sản phẩm",
-    "choice3": "Lực tác động lên đáy chai khi đóng gói",
-    "choice4": "Lực kiểm tra độ bền của nắp",
-    "answer": "Lực vặn nắp để đóng chặt nắp lên chai"
+    "question": "Một biểu đồ kiểm soát có nhiều điểm dao động lên xuống đột ngột giữa giới hạn trên và dưới. Điều này có thể chỉ ra điều gì?",
+    "choice1": "Quá trình ổn định",
+    "choice2": "Hệ thống đo lường quá chính xác",
+    "choice3": "Có biến động quá mức",
+    "choice4": "Trung bình bị dịch chuyển",
+    "answer": "Có biến động quá mức"
   },
   {
-    "question": "Nếu lực mở nắp quá cao, điều gì có thể xảy ra?",
-    "choice1": "Nắp dễ bung ra trong quá trình vận chuyển",
-    "choice2": "Người tiêu dùng gặp khó khăn khi mở nắp",
-    "choice3": "Sản phẩm nhanh bị hỏng do mất kín",
-    "choice4": "Nắp chai bị biến dạng ngay khi đóng",
-    "answer": "Người tiêu dùng gặp khó khăn khi mở nắp"
+    "question": "Luật SPC quy định \"\"7 điểm liên tiếp cùng phía trung bình\"\" là dấu hiệu lệch quá trình. Vậy nếu có 6 điểm bên trên trung bình và 1 điểm cuối ở chính giữa trung bình, thì:",
+    "choice1": "Không tính là vi phạm luật vì chưa đủ 7 điểm",
+    "choice2": "Có thể xem là dấu hiệu lệch vì điểm giữa trung bình vẫn nằm cùng phía",
+    "choice3": "Là vi phạm luật vì điểm giữa trung bình vẫn thuộc bên trên",
+    "choice4": "Không rõ, cần thêm dữ liệu",
+    "answer": "Không tính là vi phạm luật vì chưa đủ 7 điểm"
   },
   {
-    "question": "Nếu lực mở nắp quá thấp, điều gì có thể xảy ra?",
-    "choice1": "Nắp dễ bị xì, bung",
-    "choice2": "Người tiêu dùng gặp khó khăn khi mở nắp",
-    "choice3": "Chai bị nứt do áp lực trong chai tăng",
-    "choice4": "Sản phẩm có mùi vị ngon hơn",
-    "answer": "Người tiêu dùng gặp khó khăn khi mở nắp"
+    "question": "Giới hạn kiểm soát (Control Limits) khác với giới hạn kỹ thuật (Specification Limits) ở điểm nào?",
+    "choice1": "Control limits do khách hàng đặt ra, Specification limits do QA quy định",
+    "choice2": "Control limits dựa trên thống kê quá trình, Specification limits dựa trên yêu cầu kỹ thuật",
+    "choice3": "Không có sự khác biệt thực sự, chỉ khác tên gọi",
+    "choice4": "Control limits là rộng hơn Specification limits",
+    "answer": "Control limits dựa trên thống kê quá trình, Specification limits dựa trên yêu cầu kỹ thuật"
   },
   {
-    "question": "Đối với chỉ tiêu Top Load, chai rỗng thường được kiểm tra bằng cách nào?",
-    "choice1": "Đặt tải trọng từ trên xuống tăng dần cho đến khi chai bị biến dạng",
-    "choice2": "Lắc sản phẩm liên tục",
-    "choice3": "Đóng mở nắp nhiều lần",
-    "choice4": "Thả tự do từ độ cao 1 mét",
-    "answer": "Đặt tải trọng từ trên xuống tăng dần cho đến khi chai bị biến dạng"
+    "question": "Giới hạn kiểm soát được tính dựa trên:",
+    "choice1": "Yêu cầu khách hàng",
+    "choice2": "Dữ liệu thống kê từ quá trình thực tế",
+    "choice3": "Tiêu chuẩn ISO",
+    "choice4": "Giới hạn thiết kế sản phẩm",
+    "answer": "Dữ liệu thống kê từ quá trình thực tế"
   },
   {
-    "question": "Nếu chai có chỉ số Top Load thấp, điều gì có thể xảy ra trong quá trình vận chuyển?",
-    "choice1": "Sản phẩm sẽ dễ bị biến dạng hoặc vỡ dưới trọng lượng chồng lên",
-    "choice2": "Sản phẩm có thể mở nắp dễ dàng hơn",
-    "choice3": "Sản phẩm không bị ảnh hưởng gì khi vận chuyển",
-    "choice4": "Sản phẩm giữ được gas tốt hơn",
-    "answer": "Sản phẩm sẽ dễ bị biến dạng hoặc vỡ dưới trọng lượng chồng lên"
+    "question": "Lý do chính khiến biểu đồ kiểm soát cần có các luật kiểm soát là gì?",
+    "choice1": "Để tính toán trung bình quá trình",
+    "choice2": "Để xác định nguyên nhân phổ biến",
+    "choice3": "Để phát hiện nguyên nhân đặc biệt càng sớm càng tốt",
+    "choice4": "Để đảm bảo tuân thủ yêu cầu của QA",
+    "answer": "Để phát hiện nguyên nhân đặc biệt càng sớm càng tốt"
   },
   {
-    "question": "Tại sao chỉ số Top Load quan trọng trong sản xuất chai PET?",
-    "choice1": "Để xác định độ bền màu sắc của sản phẩm",
-    "choice2": "Để đảm bảo sản phẩm chịu được tải trọng khi xếp chồng và vận chuyển",
-    "choice3": "Để kiểm tra khả năng chống thấm nước",
-    "choice4": "Để đo độ kín khí của nắp chai",
-    "answer": "Để đảm bảo sản phẩm chịu được tải trọng khi xếp chồng và vận chuyển"
+    "question": "Khi một quá trình luôn nằm trong giới hạn kiểm soát nhưng sản phẩm vẫn lỗi, điều gì có thể xảy ra?",
+    "choice1": "Biểu đồ kiểm soát sai",
+    "choice2": "Giới hạn kiểm soát quá hẹp",
+    "choice3": "Giới hạn kiểm soát khác với giới hạn kỹ thuật – quá trình không đủ năng lực",
+    "choice4": "Thiết bị sản xuất hỏng",
+    "answer": "Giới hạn kiểm soát khác với giới hạn kỹ thuật – quá trình không đủ năng lực"
   },
   {
-    "question": "Mục đích chính của Ship Test là gì?",
-    "choice1": "Đánh giá khả năng tái chế của bao bì",
-    "choice2": "Đo mức độ carbon phát thải trong quá trình giao hàng",
-    "choice3": "Mô phỏng điều kiện vận chuyển để đánh giá độ bền và tính ổn định của sản phẩm",
-    "choice4": "Kiểm tra màu sắc sản phẩm sau khi đóng gói",
-    "answer": "Mô phỏng điều kiện vận chuyển để đánh giá độ bền và tính ổn định của sản phẩm"
+    "question": "Độ rộng giữa UCL và LCL phụ thuộc chủ yếu vào:",
+    "choice1": "Số mẫu",
+    "choice2": "Biến thiên của quá trình",
+    "choice3": "Mong muốn của khách hàng",
+    "choice4": "Mức sigma thiết lập",
+    "answer": "Biến thiên của quá trình"
   },
   {
-    "question": "Ship Test thường bao gồm những yếu tố mô phỏng nào sau đây?",
-    "choice1": "Rung động khi xe chạy",
-    "choice2": "Va đập hoặc rơi rớt sản phẩm",
-    "choice3": "Thay đổi nhiệt độ và độ ẩm",
-    "choice4": "Tất cả đều đúng",
-    "answer": "Tất cả đều đúng"
+    "question": "Nếu dữ liệu không phân phối chuẩn, áp dụng ±3 sigma cho giới hạn kiểm soát có thể:",
+    "choice1": "Không ảnh hưởng",
+    "choice2": "Làm giảm độ nhạy phát hiện sai lệch",
+    "choice3": "Làm biểu đồ đẹp hơn",
+    "choice4": "Tăng độ chính xác của trung bình",
+    "answer": "Làm giảm độ nhạy phát hiện sai lệch"
   },
   {
-    "question": "Nếu sản phẩm không đạt Ship Test, điều gì có thể xảy ra?",
-    "choice1": "Bao bì không thể tái sử dụng",
-    "choice2": "Sản phẩm có thể bị hỏng, rò rỉ hoặc biến dạng khi đến tay khách hàng",
-    "choice3": "Thời gian giao hàng bị chậm",
-    "choice4": "Giảm mức độ carbon phát thải trong quá trình giao hàng",
-    "answer": "Sản phẩm có thể bị hỏng, rò rỉ hoặc biến dạng khi đến tay khách hàng"
-  },
-  {
-    "question": "Yếu tố nào không ảnh hưởng trực tiếp đến chất lượng sản phẩm trong suốt thời gian bảo quản?",
-    "choice1": "Nhiệt độ bảo quản",
-    "choice2": "Độ kín của bao bì",
-    "choice3": "Vận tốc máy đóng nắp",
-    "choice4": "Ánh sáng nơi trưng bày",
-    "answer": "Vận tốc máy đóng nắp"
-  },
-  {
-    "question": "Tại sao cần theo dõi cảm quan (màu sắc, mùi, vị) trong suốt thời hạn sử dụng ?",
-    "choice1": "Vì đó là yêu cầu của kế toán",
-    "choice2": "Vì cảm quan phản ánh chính xác chất lượng sản phẩm từ góc độ người tiêu dùng",
-    "choice3": "Vì cảm quan dễ đo hơn vi sinh",
-    "choice4": "Vì cảm quan ảnh hưởng đến thời gian giao hàng",
-    "answer": "Vì cảm quan phản ánh chính xác chất lượng sản phẩm từ góc độ người tiêu dùng"
-  },
-  {
-    "question": "Biến đổi nào sau đây bắt buộc không được phép vi phạm trong suốt thời gian shelf life của sản phẩm?",
-    "choice1": "Bao bì phai màu nhẹ",
-    "choice2": "Vi sinh vật tăng sinh vượt quy định",
-    "choice3": "Nhãn hơi hở mí",
-    "choice4": "Chai mềm do mất gas dần",
-    "answer": "Vi sinh vật tăng sinh vượt quy định"
-  },
-  {
-    "question": "Nhiệt độ bảo quản có ảnh hưởng đến shelf life của sản phẩm không?",
-    "choice1": "Không ảnh hưởng nếu sản phẩm đã đóng kín",
-    "choice2": "Có ảnh hưởng, nhiệt độ cao có thể làm giảm shelf life",
-    "choice3": "Không ảnh hưởng nếu sản phẩm bảo quản trong thùng carton",
-    "choice4": "Chỉ ảnh hưởng đến bao bì, không ảnh hưởng đến chất lượng bên trong",
-    "answer": "Có ảnh hưởng, nhiệt độ cao có thể làm giảm shelf life"
-  },
-  {
-    "question": "Shelf life của sản phẩm là gì?",
-    "choice1": "Thời gian sản phẩm được lưu kho trước khi giao hàng",
-    "choice2": "Thời gian vận chuyển sản phẩm từ nhà máy đến đại lý",
-    "choice3": "Khoảng thời gian sản phẩm giữ được chất lượng tiêu chuẩn trong điều kiện bảo quản quy định",
-    "choice4": "Thời gian sản phẩm có mặt trên kệ siêu thị",
-    "answer": "Khoảng thời gian sản phẩm giữ được chất lượng tiêu chuẩn trong điều kiện bảo quản quy định"
-  },
-  {
-    "question": "Drop test là gì?",
-    "choice1": "Kiểm tra khả năng sản phẩm chịu được áp suất bên trong",
-    "choice2": "Kiểm tra phản ứng sản phẩm với thay đổi nhiệt độ",
-    "choice3": "Kiểm tra độ bền của sản phẩm/bao bì khi bị rơi từ độ cao nhất định",
-    "choice4": "Kiểm tra tốc độ lão hóa của sản phẩm",
-    "answer": "Kiểm tra độ bền của sản phẩm/bao bì khi bị rơi từ độ cao nhất định"
-  },
-  {
-    "question": "Tiêu chí nào để đánh giá chỉ tiêu Drop test không đạt?",
-    "choice1": "Bao bì bị rách, móp, vỡ",
-    "choice2": "Mực in phai màu",
-    "choice3": "Chai bị đổi màu",
-    "choice4": "Cả 3 câu trên đều đúng",
-    "answer": "Bao bì bị rách, móp, vỡ"
-  },
-  {
-    "question": "Drop test thường được thực hiện trên điều kiện nào?",
-    "choice1": "Chai/lon rỗng chưa đóng nắp",
-    "choice2": "Sản phẩm đã hoàn thiện và đóng gói như thực tế sử dụng",
-    "choice3": "Bao bì phẳng chưa tạo hình",
-    "choice4": "Thiết bị máy móc",
-    "answer": "Sản phẩm đã hoàn thiện và đóng gói như thực tế sử dụng"
-  },
-  {
-    "question": "Drop test nên được thực hiện ở đâu?",
-    "choice1": "Nơi có nhiệt độ âm sâu để tăng áp lực",
-    "choice2": "Môi trường thực tế như sàn gạch, bê tông hoặc bề mặt chuẩn theo tiêu chuẩn",
-    "choice3": "Trong bồn nước để mô phỏng rơi chìm",
-    "choice4": "Trong phòng tối để dễ quan sát",
-    "answer": "Môi trường thực tế như sàn gạch, bê tông hoặc bề mặt chuẩn theo tiêu chuẩn"
-  },
-  {
-    "question": "HACCP là gì?",
-    "choice1": "Một hệ thống kiểm tra chất lượng sản phẩm sau khi sản xuất",
-    "choice2": "Một quy trình kiểm tra cảm quan thực phẩm",
-    "choice3": "Hệ thống phân tích mối nguy và kiểm soát điểm tới hạn trong sản xuất thực phẩm",
-    "choice4": "Một tiêu chuẩn về đóng gói và bảo quản thực phẩm",
-    "answer": "Hệ thống phân tích mối nguy và kiểm soát điểm tới hạn trong sản xuất thực phẩm"
-  },
-  {
-    "question": "CCP là gì?",
-    "choice1": "Quy trình kiểm tra cảm quan nguyên liệu đầu vào",
-    "choice2": "Điểm kiểm soát tới hạn trong quá trình sản xuất nhằm loại bỏ hoặc giảm mối nguy đến mức chấp nhận được",
-    "choice3": "Kế hoạch dự phòng khi có sự cố xảy ra trong sản xuất",
-    "choice4": "Hệ thống quản lý chất lượng dựa trên tiêu chuẩn ISO 9001",
-    "answer": "Điểm kiểm soát tới hạn trong quá trình sản xuất nhằm loại bỏ hoặc giảm mối nguy đến mức chấp nhận được"
-  },
-  {
-    "question": "OPRP là gì?",
-    "choice1": "Quy trình vận hành thường ngày trong doanh nghiệp",
-    "choice2": "Biện pháp kiểm soát mối nguy không đáng kể trong hệ thống ISO 9001",
-    "choice3": "Biện pháp kiểm soát mối nguy quan trọng nhưng không được phân loại là CCP, thuộc chương trình tiên quyết vận hành",
-    "choice4": "Quy trình kiểm nghiệm vi sinh vật trong thực phẩm",
-    "answer": "Biện pháp kiểm soát mối nguy quan trọng nhưng không được phân loại là CCP, thuộc chương trình tiên quyết vận hành"
-  },
-  {
-    "question": "Mối nguy đáng kể trong hệ thống HACCP là gì?",
-    "choice1": "Mối nguy có khả năng xảy ra và/hoặc gây hậu quả nghiêm trọng đến an toàn thực phẩm, cần được kiểm soát bằng biện pháp cụ thể",
-    "choice2": "Mối nguy có thể xảy ra nhưng không ảnh hưởng đến chất lượng sản phẩm",
-    "choice3": "Mối nguy có thể được kiểm soát hoàn toàn bởi chương trình tiên quyết (PRP), không cần phân tích thêm",
-    "choice4": "Mối nguy có liên quan đến yếu tố cảm quan hoặc thẩm mỹ của sản phẩm nhưng không ảnh hưởng đến sức khỏe",
-    "answer": "Mối nguy có khả năng xảy ra và/hoặc gây hậu quả nghiêm trọng đến an toàn thực phẩm, cần được kiểm soát bằng biện pháp cụ thể"
-  },
-  {
-    "question": "Vi sinh vật nào sau đây không nằm trong danh mục vi sinh vật cần kiểm soát trong nước uống theo QCVN?",
-    "choice1": "Acid lactic bacteria",
-    "choice2": "Pseudomonas aeruginosa",
-    "choice3": "Escherichia coli",
-    "choice4": "Coliform tổng số",
-    "answer": "Acid lactic bacteria"
-  },
-  {
-    "question": "Phát biểu nào sau đây về Pseudomonas aeruginosa trong nước uống là đúng theo QCVN 6-1: 2010/BYT?",
-    "choice1": "Đây là vi khuẩn cơ hội, bắt buộc không được phát hiện trong mẫu nước uống đóng chai",
-    "choice2": "Vi khuẩn này được cho phép tồn tại với số lượng giới hạn trong nước uống đóng chai",
-    "choice3": "Pseudomonas aeruginosa chỉ gây hại trong nước sinh hoạt, không cần kiểm soát trong nước uống",
-    "choice4": "Chỉ kiểm tra Pseudomonas aeruginosa khi có dấu hiệu ô nhiễm nguồn nước",
-    "answer": "Đây là vi khuẩn cơ hội, bắt buộc không được phát hiện trong mẫu nước uống đóng chai"
-  },
-  {
-    "question": "Việc kiểm soát Pseudomonas aeruginosa trong nước uống đóng chai quan trọng vì lý do nào?",
-    "choice1": "Pseudomonas aeruginosa giúp làm sạch các tạp chất trong nước",
-    "choice2": "Đây là vi khuẩn thường xuất hiện trong nước sinh hoạt, không ảnh hưởng nước đóng chai",
-    "choice3": "Vi khuẩn này không tồn tại lâu trong môi trường nước",
-    "choice4": "Vi khuẩn này gây bệnh cho mọi đối tượng, đặc biệt nguy hiểm cho người có hệ miễn dịch yếu",
-    "answer": "Vi khuẩn này gây bệnh cho mọi đối tượng, đặc biệt nguy hiểm cho người có hệ miễn dịch yếu"
-  },
-  {
-    "question": "Một cơ sở sản xuất muốn áp dụng HACCP nhưng không thực hiện đầy đủ các chương trình tiên quyết (PRP). Điều này có thể dẫn đến hậu quả gì?",
-    "choice1": "Không ảnh hưởng vì PRP không quan trọng trong HACCP",
-    "choice2": "Dễ xảy ra mối nguy không kiểm soát được ngay từ đầu, làm giảm hiệu quả hệ thống HACCP",
-    "choice3": "HACCP vẫn hoạt động bình thường mà không cần PRP",
-    "choice4": "PRP chỉ ảnh hưởng đến chất lượng, không ảnh hưởng an toàn thực phẩm",
-    "answer": "Dễ xảy ra mối nguy không kiểm soát được ngay từ đầu, làm giảm hiệu quả hệ thống HACCP"
-  },
-  {
-    "question": "Tại sao việc xác định mối nguy đáng kể là bước đầu tiên và quan trọng nhất trong hệ thống HACCP?",
-    "choice1": "Vì nó giúp tiết kiệm chi phí sản xuất",
-    "choice2": "Vì chỉ có mối nguy đáng kể mới ảnh hưởng trực tiếp đến an toàn thực phẩm và cần kiểm soát cụ thể",
-    "choice3": "Vì tất cả mối nguy đều giống nhau nên cần phải xác định rõ để phân loại",
-    "choice4": "Vì mối nguy đáng kể là những mối nguy đã được loại bỏ hoàn toàn",
-    "answer": "Vì chỉ có mối nguy đáng kể mới ảnh hưởng trực tiếp đến an toàn thực phẩm và cần kiểm soát cụ thể"
-  },
-  {
-    "question": "Nếu một CCP bị thất bại, theo HACCP bạn sẽ thực hiện bước tiếp theo nào?",
-    "choice1": "Tiếp tục sản xuất bình thường vì thất bại chỉ xảy ra tạm thời",
-    "choice2": "Dừng quá trình sản xuất và xử lý sản phẩm có khả năng bị mất an toàn",
-    "choice3": "Bỏ qua và tăng cường kiểm tra cảm quan sản phẩm sau khi hoàn thành",
-    "choice4": "Ghi nhận và báo cáo sự cố nhưng không cần hành động ngay",
-    "answer": "Dừng quá trình sản xuất và xử lý sản phẩm có khả năng bị mất an toàn"
-  },
-  {
-    "question": "Phát biểu nào sau đây mô tả đúng nhất về CIP và COP?",
-    "choice1": "CIP là phương pháp vệ sinh bằng tay, còn COP là vệ sinh tự động toàn bộ hệ thống.",
-    "choice2": "CIP (Cleaning in Place) là vệ sinh tại chỗ mà không cần tháo rời thiết bị, còn COP (Cleaning out of Place) là vệ sinh bằng cách tháo rời thiết bị và làm sạch riêng biệt.",
-    "choice3": "CIP và COP đều là quy trình kiểm tra sản phẩm cuối cùng.",
-    "choice4": "CIP và COP là hai phương pháp kiểm định chất lượng nước đầu vào trong sản xuất.",
-    "answer": "CIP (Cleaning in Place) là vệ sinh tại chỗ mà không cần tháo rời thiết bị, còn COP (Cleaning out of Place) là vệ sinh bằng cách tháo rời thiết bị và làm sạch riêng biệt."
-  },
-  {
-    "question": "Trong sản xuất thực phẩm, phương pháp vệ sinh nào sau đây thường được áp dụng cho đường ống, bồn chứa và hệ thống khép kín, không cần tháo rời thiết bị?",
-    "choice1": "CIP – Vệ sinh tại chỗ",
-    "choice2": "COP – Vệ sinh ngoài thiết bị",
-    "choice3": "GMP – Thực hành sản xuất tốt",
-    "choice4": "GHP – Thực hành vệ sinh tốt",
-    "answer": "CIP – Vệ sinh tại chỗ"
-  },
-  {
-    "question": "Bước nào sau đây không thuộc trong quy trình CIP line 1 (chỉ sản xuất nước khoáng 375)",
-    "choice1": "Divoflow",
-    "choice2": "Chlorine",
-    "choice3": "Acid citric",
-    "choice4": "Nước RO 20",
-    "answer": "Divoflow"
-  },
-  {
-    "question": "Khi quy trình CIP có sử dụng hóa chất nào sau đây thì cần phải đo chỉ tiêu \"Hợp chất hữu cơ\"?",
-    "choice1": "Divoflow",
-    "choice2": "Nước RO 20",
-    "choice3": "Acid  hydrochloric ",
-    "choice4": "Acid citric",
-    "answer": "Acid citric"
-  },
-  {
-    "question": "Trước khi sản xuất, các chỉ tiêu chất lượng nào bắt buộc phải đo bất kể sử dụng quy trình CIP nào?",
-    "choice1": "Trạng thái (cặn/không cặn), màu, mùi, vị",
-    "choice2": "Hợp chất hữu cơ",
-    "choice3": "Chlorine dư",
-    "choice4": "Tất cả đều đúng",
-    "answer": "Trạng thái (cặn/không cặn), màu, mùi, vị"
-  },
-  {
-    "question": "Sau quá trình CIP, chỉ tiêu \"Hợp chất hữu cơ\" vượt tiêu chuẩn trong nước tráng cuối, điều này thể hiện hóa chất nào chưa được xả sạch?",
-    "choice1": "Acid citric",
-    "choice2": "Chlorine",
-    "choice3": "Divoflow",
-    "choice4": "Cyclodextrin",
-    "answer": "Acid citric"
-  },
-  {
-    "question": "Hóa chất nào đang được sử dụng để xông phòng?",
-    "choice1": "Formol",
-    "choice2": "Chlorine",
-    "choice3": "Divoflow",
-    "choice4": "Oxonia",
-    "answer": "Oxonia"
+    "question": "Một điểm vượt giới hạn kiểm soát nhưng nằm trong giới hạn kỹ thuật có nghĩa là:",
+    "choice1": "Sản phẩm đạt yêu cầu",
+    "choice2": "Quá trình mất kiểm soát, dù sản phẩm có thể đạt",
+    "choice3": "Không vấn đề gì",
+    "choice4": "Máy móc hoạt động tốt hơn kỳ vọng",
+    "answer": "Quá trình mất kiểm soát, dù sản phẩm có thể đạt"
   }
 ];
 

@@ -853,8 +853,8 @@ startGame = () => {
 
 // Display Next Random Question and Answers
 getNewQuestion = () => {
-  if (availableQuesions.length === 0 || questionCounter-1 === MAX_QUESTIONS) {
-    localStorage.setItem("so_cau_dung", questionCounter-1);
+  if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    localStorage.setItem("so_cau_dung", questionCounter);
     localStorage.setItem("so_cau_sai", so_cau_sai);
     localStorage.setItem("thoi_gian_su_dung", thoi_gian_su_dung)
     return window.location.assign("../html/end.html");
